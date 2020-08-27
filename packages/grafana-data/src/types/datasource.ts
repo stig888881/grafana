@@ -484,8 +484,8 @@ export interface DataSourceSettings<T extends DataSourceJsonData = DataSourceJso
   access: string;
   url: string;
   password: string;
-  user: string;
-  database: string;
+  user?: string;
+  database?: string;
   basicAuth: boolean;
   basicAuthPassword: string;
   basicAuthUser: string;

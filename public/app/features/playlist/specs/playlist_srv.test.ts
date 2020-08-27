@@ -44,7 +44,6 @@ const mockWindowLocation = (): [jest.MockInstance<any, any>, () => void] => {
 
   // JSDom defines window in a way that you cannot tamper with location so this seems to be the only way to change it.
   // https://github.com/facebook/jest/issues/5124#issuecomment-446659510
-  delete window.location;
   window.location = {} as any;
 
   // Only mocking href as that is all this test needs, but otherwise there is lots of things missing, so keep that

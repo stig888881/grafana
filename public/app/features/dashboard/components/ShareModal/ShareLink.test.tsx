@@ -28,7 +28,6 @@ function mockLocationHref(href: string) {
     search = href.substring(searchPos);
   }
 
-  delete window.location;
   (window as any).location = {
     ...location,
     href,
