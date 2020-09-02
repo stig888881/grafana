@@ -23,7 +23,7 @@ export class DataSourcePicker extends PureComponent<Props> {
   static defaultProps: Partial<Props> = {
     autoFocus: false,
     openMenuOnFocus: false,
-    placeholder: 'Select datasource',
+    placeholder: 'Выберете данные',
   };
 
   searchInput: HTMLElement;
@@ -82,7 +82,7 @@ export class DataSourcePicker extends PureComponent<Props> {
           maxMenuHeight={500}
           menuPlacement="bottom"
           placeholder={placeholder}
-          noOptionsMessage="No datasources found"
+          noOptionsMessage="Данные не найдены"
           value={value}
           invalid={invalid}
         />

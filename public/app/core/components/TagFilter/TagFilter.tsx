@@ -67,8 +67,8 @@ export const TagFilter: FC<Props> = ({
     getOptionValue: (i: any) => i.value,
     isMulti: true,
     loadOptions: onLoadOptions,
-    loadingMessage: 'Loading...',
-    noOptionsMessage: 'No tags found',
+    loadingMessage: 'Загрузка...',
+    noOptionsMessage: 'Теги не найдены',
     onChange: onTagChange,
     placeholder,
     styles: resetSelectStyles(),
@@ -93,7 +93,7 @@ export const TagFilter: FC<Props> = ({
   };
 
   return (
-    <div className={styles.tagFilter} aria-label="Tag filter">
+    <div className={styles.tagFilter} aria-label="Фильтр тегов">
       {isClearable && tags.length > 0 && (
         <span className={styles.clear} onClick={() => onTagChange([])}>
           Clear tags

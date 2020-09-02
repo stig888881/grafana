@@ -16,7 +16,7 @@ export const TagOption: FC<ExtendedOptionProps> = ({ data, className, label, isF
   const styles = getStyles(theme);
 
   return (
-    <div className={cx(styles.option, isFocused && styles.optionFocused)} aria-label="Tag option" {...innerProps}>
+    <div className={cx(styles.option, isFocused && styles.optionFocused)} aria-label="Опции тегов" {...innerProps}>
       <div className={`tag-filter-option ${className || ''}`}>
         <TagBadge label={label} removeIcon={false} count={data.count} />
       </div>

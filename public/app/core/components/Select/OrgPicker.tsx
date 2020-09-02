@@ -61,8 +61,8 @@ export class OrgPicker extends PureComponent<Props, State> {
         isSearchable={false}
         loadOptions={this.getOrgOptions}
         onChange={onSelected}
-        placeholder="Select organization"
-        noOptionsMessage="No organizations found"
+        placeholder="Выбрать организацию"
+        noOptionsMessage="Организация не найдена"
       />
     );
   }

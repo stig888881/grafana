@@ -20,4 +20,4 @@ export const BackButton: React.FC<Props> = ({ surface, onClick }) => {
   );
 };
 
-BackButton.displayName = 'BackButton';
+BackButton.displayName = 'Назад';

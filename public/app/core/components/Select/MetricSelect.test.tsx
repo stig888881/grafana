@@ -42,7 +42,7 @@ describe('MetricSelect', () => {
 
       // @ts-ignore typescript doesn't understand that noOptionsMessage can't be undefined here
       const noOptionsMessage = select.props().noOptionsMessage();
-      expect(noOptionsMessage).toEqual('No options found');
+      expect(noOptionsMessage).toEqual('Опций не найдено');
       expect(spyOnChange).toHaveBeenCalledWith('foo');
     });
   });
