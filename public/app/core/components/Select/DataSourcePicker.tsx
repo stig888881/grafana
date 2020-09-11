@@ -61,8 +61,8 @@ export class DataSourcePicker extends PureComponent<Props> {
           onBlur={onBlur}
           openMenuOnFocus={openMenuOnFocus}
           maxMenuHeight={500}
-          placeholder="Select datasource"
-          noOptionsMessage={() => 'No datasources found'}
+          placeholder="Выберите источник данных"
+          noOptionsMessage={() => 'Источник данных не выбран'}
           value={value}
         />
       </div>
