@@ -78,7 +78,7 @@ export class TimePickerPopover extends Component<Props, State> {
       <div className={TimePickerPopover.popoverClassName}>
         <div className="time-picker-popover-box">
           <div className="time-picker-popover-box-header">
-            <span className="time-picker-popover-box-title">Quick ranges</span>
+            <span className="time-picker-popover-box-title">Быстрые диапазоны</span>
           </div>
           <div className="time-picker-popover-box-body">
             {Object.keys(options).map(key => {
@@ -106,12 +106,12 @@ export class TimePickerPopover extends Component<Props, State> {
         </div>
         <div className="time-picker-popover-box">
           <div className="time-picker-popover-box-header">
-            <span className="time-picker-popover-box-title">Custom range</span>
+            <span className="time-picker-popover-box-title">Пользовательский диапазоно</span>
           </div>
           <div className="time-picker-popover-box-body">
             <div className="time-picker-popover-box-body-custom-ranges">
               <div className="time-picker-popover-box-body-custom-ranges-input">
-                <span>From:</span>
+                <span>От:</span>
                 <TimePickerInput
                   isTimezoneUtc={isTimezoneUtc}
                   roundup={false}
@@ -132,7 +132,7 @@ export class TimePickerPopover extends Component<Props, State> {
             </div>
             <div className="time-picker-popover-box-body-custom-ranges">
               <div className="time-picker-popover-box-body-custom-ranges-input">
-                <span>To:</span>
+                <span>До:</span>
                 <TimePickerInput
                   isTimezoneUtc={isTimezoneUtc}
                   roundup={true}
@@ -159,7 +159,7 @@ export class TimePickerPopover extends Component<Props, State> {
               disabled={!isValid}
               onClick={this.onApplyClick}
             >
-              Apply
+              Принять
             </button>
           </div>
         </div>
