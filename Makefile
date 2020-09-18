@@ -56,7 +56,7 @@ test: test-go test-js
 
 run:
 	@echo "start a server"
-	./bin/grafana-server
+	find bin/ -type f -executable -name grafana-server -exec '{}' \;
 
 clean:
 	@echo "cleaning"
