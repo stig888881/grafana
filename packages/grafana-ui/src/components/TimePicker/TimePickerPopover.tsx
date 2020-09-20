@@ -106,7 +106,7 @@ export class TimePickerPopover extends Component<Props, State> {
         </div>
         <div className="time-picker-popover-box">
           <div className="time-picker-popover-box-header">
-            <span className="time-picker-popover-box-title">Пользовательский диапазоно</span>
+            <span className="time-picker-popover-box-title">Пользовательский диапазон</span>
           </div>
           <div className="time-picker-popover-box-body">
             <div className="time-picker-popover-box-body-custom-ranges">
