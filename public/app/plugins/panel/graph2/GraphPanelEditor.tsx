@@ -43,9 +43,9 @@ export class GraphPanelEditor extends PureComponent<PanelEditorProps<Options>> {
       <>
         <div className="section gf-form-group">
           <h5 className="section-heading">Режимы рисования</h5>
-          <Switch label="Lines" labelClass="width-5" checked={showLines} onChange={this.onToggleLines} />
-          <Switch label="Bars" labelClass="width-5" checked={showBars} onChange={this.onToggleBars} />
-          <Switch label="Points" labelClass="width-5" checked={showPoints} onChange={this.onTogglePoints} />
+          <Switch label="Линии" labelClass="width-5" checked={showLines} onChange={this.onToggleLines} />
+          <Switch label="Брусья" labelClass="width-5" checked={showBars} onChange={this.onToggleBars} />
+          <Switch label="Точки" labelClass="width-5" checked={showPoints} onChange={this.onTogglePoints} />
         </div>
         <GraphLegendEditor options={this.props.options.legend} onChange={this.onLegendOptionsChange} />
       </>
