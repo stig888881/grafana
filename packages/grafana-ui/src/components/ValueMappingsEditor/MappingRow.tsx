@@ -63,7 +63,7 @@ export default class MappingRow extends PureComponent<Props, State> {
       return (
         <>
           <FormField
-            label="From"
+            label="От"
             labelWidth={4}
             inputWidth={8}
             onBlur={this.updateMapping}
@@ -71,7 +71,7 @@ export default class MappingRow extends PureComponent<Props, State> {
             value={from}
           />
           <FormField
-            label="To"
+            label="До"
             labelWidth={4}
             inputWidth={8}
             onBlur={this.updateMapping}
