@@ -78,7 +78,7 @@ export class TimePickerPopover extends Component<Props, State> {
       <div className={TimePickerPopover.popoverClassName}>
         <div className="time-picker-popover-box">
           <div className="time-picker-popover-box-header">
-            <span className="time-picker-popover-box-title">Быстрые диапазоны</span>
+            <span className="time-picker-popover-box-title">Стандартные интервалы</span>
           </div>
           <div className="time-picker-popover-box-body">
             {Object.keys(options).map(key => {
