@@ -241,7 +241,7 @@ export default class TimePicker extends PureComponent<TimePickerProps, TimePicke
             <span className="popover-box__title">Пользовательский диапозон</span>
           </div>
           <div className="popover-box__body gf-timepicker-absolute-section">
-            <label className="small">From:</label>
+            <label className="small">От:</label>
             <div className="gf-form-inline">
               <div className="gf-form max-width-28">
                 <Input
@@ -253,7 +253,7 @@ export default class TimePicker extends PureComponent<TimePickerProps, TimePicke
               </div>
             </div>
 
-            <label className="small">To:</label>
+            <label className="small">До:</label>
             <div className="gf-form-inline">
               <div className="gf-form max-width-28">
                 <Input
