@@ -66,7 +66,7 @@ export class BarGaugePanelEditor extends PureComponent<PanelEditorProps<BarGauge
               />
             </div>
             <div className="form-field">
-              <FormLabel width={labelWidth}>Mode</FormLabel>
+              <FormLabel width={labelWidth}>Режим</FormLabel>
               <Select
                 width={12}
                 options={displayModes}
