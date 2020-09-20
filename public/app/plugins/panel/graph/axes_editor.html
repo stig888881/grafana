@@ -1,14 +1,14 @@
 <div class="editor-row">
 	<div class="section gf-form-group" ng-repeat="yaxis in ctrl.panel.yaxes">
 
-		<h5 class="section-heading" ng-show="$index === 0">Left Y</h5>
-		<h5 class="section-heading" ng-show="$index === 1">Right Y</h5>
+		<h5 class="section-heading" ng-show="$index === 0">Левый Y</h5>
+		<h5 class="section-heading" ng-show="$index === 1">Правый Y</h5>
 
 		<gf-form-switch class="gf-form" label="Show" label-class="width-6" checked="yaxis.show" on-change="ctrl.render()"></gf-form-switch>
 
 		<div ng-if="yaxis.show">
 			<div class="gf-form">
-				<label class="gf-form-label width-6">Unit</label>
+				<label class="gf-form-label width-6">Единица измерения</label>
 				<div class="gf-form-dropdown-typeahead max-width-20" ng-model="yaxis.format" dropdown-typeahead2="ctrl.unitFormats" dropdown-typeahead-on-select="ctrl.setUnitFormat(yaxis, $subItem)"></div>
 			</div>
 		</div>
