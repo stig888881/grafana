@@ -218,7 +218,7 @@ export default class TimePicker extends PureComponent<TimePickerProps, TimePicke
       <div ref={this.dropdownRef} className="gf-timepicker-dropdown">
         <div className="popover-box">
           <div className="popover-box__header">
-            <span className="popover-box__title">Quick ranges</span>
+            <span className="popover-box__title">Стандартные интервалы</span>
           </div>
           <div className="popover-box__body gf-timepicker-relative-section">
             {Object.keys(timeOptions).map(section => {
