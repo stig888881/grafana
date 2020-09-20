@@ -12,7 +12,7 @@
       <input type="text" class="gf-form-input max-width-15" ng-model="ctrl.panel.limit" ng-change="ctrl.onRefresh()" />
     </div>
     <div class="gf-form" ng-show="ctrl.panel.show === 'current'">
-      <span class="gf-form-label width-8">Sort order</span>
+      <span class="gf-form-label width-8">Порядок сортировки</span>
       <div class="gf-form-select-wrapper max-width-15">
         <select class="gf-form-input" ng-model="ctrl.panel.sortOrder" ng-options="f.value as f.text for f in ctrl.sortOrderOptions" ng-change="ctrl.onRefresh()"></select>
       </div>
