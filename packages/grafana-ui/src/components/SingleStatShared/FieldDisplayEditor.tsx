@@ -65,7 +65,7 @@ export class FieldDisplayEditor extends PureComponent<Props> {
       <PanelOptionsGroup title="Display">
         <>
           <div className="gf-form">
-            <FormLabel width={labelWidth}>Show</FormLabel>
+            <FormLabel width={labelWidth}>Показать</FormLabel>
             <Select
               options={showOptions}
               value={values ? showOptions[0] : showOptions[1]}
