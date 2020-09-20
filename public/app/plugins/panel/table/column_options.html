@@ -3,14 +3,14 @@
     <h5 class="section-heading">Options</h5>
     <div class="gf-form-inline">
       <div class="gf-form">
-        <label class="gf-form-label width-12">Apply to columns named</label>
+        <label class="gf-form-label width-12">Принять название столбцов</label>
         <input type="text" placeholder="Name or regex" class="gf-form-input width-13" ng-model="style.pattern" bs-tooltip="'Specify regex using /my.*regex/ syntax'"
             bs-typeahead="editor.getColumnNames" ng-blur="editor.render()" data-min-length=0 data-items=100 ng-model-onblur
             data-placement="right">
       </div>
     </div>
     <div class="gf-form" ng-if="style.type !== 'hidden'">
-      <label class="gf-form-label width-12">Column Header</label>
+      <label class="gf-form-label width-12">Заголовок столбца</label>
       <input type="text" class="gf-form-input width-12" ng-model="style.alias" ng-change="editor.render()" ng-model-onblur placeholder="Override header label">
     </div>
     <gf-form-switch class="gf-form" label-class="width-12" label="Render value as link" checked="style.link" on-change="editor.render()"></gf-form-switch>
