@@ -41,10 +41,10 @@ interface PanelEditorTab {
 }
 
 const panelEditorTabTexts = {
-  [PanelEditorTabIds.Queries]: 'Queries',
-  [PanelEditorTabIds.Visualization]: 'Visualization',
-  [PanelEditorTabIds.Advanced]: 'General',
-  [PanelEditorTabIds.Alert]: 'Alert',
+  [PanelEditorTabIds.Queries]: 'Запросы',
+  [PanelEditorTabIds.Visualization]: 'Визуализация',
+  [PanelEditorTabIds.Advanced]: 'Общие',
+  [PanelEditorTabIds.Alert]: 'Предупреждение',
 };
 
 const getPanelEditorTab = (tabId: PanelEditorTabIds): PanelEditorTab => {
