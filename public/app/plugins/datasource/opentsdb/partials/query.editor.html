@@ -48,7 +48,7 @@
 
 	<div class="gf-form-inline">
 		<div class="gf-form max-width-25">
-			<label class="gf-form-label query-keyword width-8">Down sample</label>
+			<label class="gf-form-label query-keyword width-8">Нижний образец</label>
 			<input type="text" class="gf-form-input gf-form-input--has-help-icon"
 						 ng-model="ctrl.target.downsampleInterval"
 						 ng-model-onblur
@@ -60,7 +60,7 @@
 		</div>
 
 		<div class="gf-form">
-			<label class="gf-form-label query-keyword">Aggregator</label>
+			<label class="gf-form-label query-keyword">Агрегатор</label>
 			<div class="gf-form-select-wrapper">
 				<select ng-model="ctrl.target.downsampleAggregator" class="gf-form-input"
 								ng-options="agg for agg in ctrl.aggregators"
@@ -70,7 +70,7 @@
 		</div>
 
 		<div class="gf-form" ng-if="ctrl.tsdbVersion >= 2">
-			<label class="gf-form-label query-keyword width-6">Fill</label>
+			<label class="gf-form-label query-keyword width-6">Заполнить</label>
 			<div class="gf-form-select-wrapper">
 				<select ng-model="ctrl.target.downsampleFillPolicy" class="gf-form-input"
 								ng-options="agg for agg in ctrl.fillPolicies"
