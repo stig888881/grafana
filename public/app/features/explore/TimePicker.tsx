@@ -266,7 +266,7 @@ export default class TimePicker extends PureComponent<TimePickerProps, TimePicke
             </div>
             <div className="gf-form">
               <button className="btn gf-form-btn btn-secondary" onClick={this.handleClickApply}>
-                Apply
+                Принять
               </button>
             </div>
           </div>
