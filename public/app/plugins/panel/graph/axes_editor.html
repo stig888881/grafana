@@ -14,7 +14,7 @@
 		</div>
 
 			<div class="gf-form">
-				<label class="gf-form-label width-6">Scale</label>
+				<label class="gf-form-label width-6">Масштаб</label>
 				<div class="gf-form-select-wrapper max-width-20">
 					<select class="gf-form-input" ng-model="yaxis.logBase" ng-options="v as k for (k, v) in ctrl.logScales" ng-change="ctrl.render()"></select>
 				</div>
@@ -45,7 +45,7 @@
 	</div>
 
 	<div class="section gf-form-group">
-		<h5 class="section-heading">X-Axis</h5>
+		<h5 class="section-heading">Ось-X</h5>
 		<gf-form-switch class="gf-form" label="Show" label-class="width-6" checked="ctrl.panel.xaxis.show" on-change="ctrl.render()"></gf-form-switch>
 
 		<div class="gf-form">
@@ -80,7 +80,7 @@
 
 		<div>
 			<br/>
-			<h5 class="section-heading">Y-Axes</h5>
+			<h5 class="section-heading">Ось-Y</h5>
 			<gf-form-switch class="gf-form" label="Align" tooltip="Align left and right Y-axes" label-class="width-6" switch-class="width-5" checked="ctrl.panel.yaxis.align" on-change="ctrl.render()"></gf-form-switch>
 			<div class="gf-form" ng-show="ctrl.panel.yaxis.align">
 				<label class="gf-form-label width-6">
