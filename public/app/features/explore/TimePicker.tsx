@@ -238,7 +238,7 @@ export default class TimePicker extends PureComponent<TimePickerProps, TimePicke
 
         <div className="popover-box">
           <div className="popover-box__header">
-            <span className="popover-box__title">Custom range</span>
+            <span className="popover-box__title">Пользовательский диапозон</span>
           </div>
           <div className="popover-box__body gf-timepicker-absolute-section">
             <label className="small">From:</label>
