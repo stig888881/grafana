@@ -224,7 +224,7 @@ export default class TimePicker extends PureComponent<TimePickerProps, TimePicke
             {Object.keys(timeOptions).map(section => {
               const group = timeOptions[section];
               return (
-                <ul key={section}>
+                <ul key={3}>
                   {group.map((option: any) => (
                     <li className={option.active ? 'active' : ''} key={option.display}>
                       <a onClick={() => this.handleClickRelativeOption(option)}>{option.display}</a>
