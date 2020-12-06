@@ -19,40 +19,15 @@ const spans: { [key: string]: { display: string; section?: number } } = {
 const rangeOptions = [
 
 
-  { from: 'now-1d/d', to: 'now-1d/d', display: 'РЫБА', section: 1 },
-  {
-    from: 'now-2d/d',
-    to: 'now-2d/d',
-    display: 'РЫБА',
-    section: 1,
-  },
-  {
-    from: 'now-7d/d',
-    to: 'now-7d/d',
-    display: 'РЫБА',
-    section: 1,
-  },
-  { from: 'now-1w/w', to: 'now-1w/w', display: 'РЫБА', section: 1 },
-  { from: 'now-1M/M', to: 'now-1M/M', display: 'РЫБА', section: 1 },
-  { from: 'now-1y/y', to: 'now-1y/y', display: 'РЫБА', section: 1 },
+  { from: 'now-5m', to: 'now', display: 'Последние 5 минут', section: 0 },
+  { from: 'now-15m', to: 'now', display: 'Последние 15 минут', section: 0 },
+  { from: 'now-30m', to: 'now', display: 'Последние 30 минут', section: 0 },
+  { from: 'now-1h', to: 'now', display: 'Последний час', section: 0 },
+  { from: 'now-3h', to: 'now', display: 'Последние 3 часа', section: 0 },
+  { from: 'now-6h', to: 'now', display: 'Последние 6 часов', section: 0 },
+  { from: 'now-12h', to: 'now', display: 'Последние 12 часов', section: 0 },
+  { from: 'now-24h', to: 'now', display: 'Последние 24 часа', section: 0 },
 
-  { from: 'now-5m', to: 'now', display: 'Последние 5 минут', section: 3 },
-  { from: 'now-15m', to: 'now', display: 'Последние 15 минут', section: 3 },
-  { from: 'now-30m', to: 'now', display: 'Последние 30 минут', section: 3 },
-  { from: 'now-1h', to: 'now', display: 'Последний час', section: 3 },
-  { from: 'now-3h', to: 'now', display: 'Последние 3 часа', section: 3 },
-  { from: 'now-6h', to: 'now', display: 'Последние 6 часов', section: 3 },
-  { from: 'now-12h', to: 'now', display: 'Последние 12 часов', section: 3 },
-  { from: 'now-24h', to: 'now', display: 'Последние 24 часа', section: 3 },
-
-  { from: 'now-2d', to: 'now', display: 'РЫБА', section: 0 },
-  { from: 'now-7d', to: 'now', display: 'РЫБА', section: 0 },
-  { from: 'now-30d', to: 'now', display: 'РЫБА', section: 0 },
-  { from: 'now-90d', to: 'now', display: 'РЫБА', section: 0 },
-  { from: 'now-6M', to: 'now', display: 'РЫБА', section: 0 },
-  { from: 'now-1y', to: 'now', display: 'РЫБА', section: 0 },
-  { from: 'now-2y', to: 'now', display: 'РЫБА', section: 0 },
-  { from: 'now-5y', to: 'now', display: 'РЫБА', section: 0 },
 ];
 
 const absoluteFormat = 'MMM D, YYYY HH:mm:ss';
