@@ -17,14 +17,7 @@ const spans: { [key: string]: { display: string; section?: number } } = {
 };
 
 const rangeOptions = [
-  { from: 'now/d', to: 'now/d', display: 'РЫБА', section: 2 },
-  { from: 'now/d', to: 'now', display: 'РЫБА', section: 2 },
-  { from: 'now/w', to: 'now/w', display: 'РЫБА', section: 2 },
-  { from: 'now/w', to: 'now', display: 'РЫБА', section: 2 },
-  { from: 'now/M', to: 'now/M', display: 'РЫБА', section: 2 },
-  { from: 'now/M', to: 'now', display: 'РЫБА', section: 2 },
-  { from: 'now/y', to: 'now/y', display: 'РЫБА', section: 2 },
-  { from: 'now/y', to: 'now', display: 'РЫБА', section: 2 },
+
 
   { from: 'now-1d/d', to: 'now-1d/d', display: 'РЫБА', section: 1 },
   {
