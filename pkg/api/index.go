@@ -279,7 +279,7 @@ func (hs *HTTPServer) setIndexViewData(c *m.ReqContext) (*dtos.IndexViewData, er
 					Url:         setting.AppSubUrl + "/plugins",
 				},
 				{
-					Text:        "Preferences",
+					Text:        "Предпочтения",
 					Id:          "org-settings",
 					Description: "Organization preferences",
 					Icon:        "gicon gicon-preferences",
