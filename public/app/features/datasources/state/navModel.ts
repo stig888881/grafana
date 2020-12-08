@@ -25,7 +25,7 @@ export function buildNavModel(dataSource: DataSourceSettings, pluginMeta: Plugin
       active: false,
       icon: 'fa fa-fw fa-th-large',
       id: `datasource-dashboards-${dataSource.id}`,
-      text: 'Dashboards',
+      text: 'Панель управления',
       url: `datasources/edit/${dataSource.id}/dashboards`,
     });
   }
