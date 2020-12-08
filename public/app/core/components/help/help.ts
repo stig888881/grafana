@@ -9,13 +9,13 @@ export class HelpCtrl {
   constructor() {
     this.tabIndex = 0;
     this.shortcuts = {
-      Global: [
+      Главные: [
         { keys: ['g', 'h'], description: 'Вернуть на главную панель' },
         { keys: ['g', 'p'], description: 'Перейти в профиль' },
         { keys: ['s', 'o'], description: 'Открыть поиск' },
         { keys: ['esc'], description: 'Выход из режима редактирования / настройки представлений' },
       ],
-      Dashboard: [
+      Панель: [
         { keys: ['mod+s'], description: 'Сохранить панель' },
         { keys: ['d', 'r'], description: 'Обновить все понели' },
         { keys: ['d', 's'], description: 'Настройки панели' },
@@ -27,7 +27,7 @@ export class HelpCtrl {
         { keys: ['mod+o'], description: 'Переключение перекрестия общего графика' },
         { keys: ['d', 'l'], description: 'Переключение всех легенд панели' },
       ],
-      'Focused Panel': [
+      'Специальная панель': [
         { keys: ['e'], description: 'Переключить панель редактирования вида' },
         { keys: ['v'], description: 'Переключить панель полноэкранного просмотра' },
         { keys: ['p', 's'], description: 'Доля Группы Модальных' },
@@ -35,7 +35,7 @@ export class HelpCtrl {
         { keys: ['p', 'r'], description: 'Снять Панель' },
         { keys: ['p', 'l'], description: 'Легенда панели переключения' },
       ],
-      'Time Range': [
+      'Временные интервалы': [
         { keys: ['t', 'z'], description: 'Масштабирование временного диапазона' },
         {
           keys: ['t', '<i class="fa fa-long-arrow-left"></i>'],
