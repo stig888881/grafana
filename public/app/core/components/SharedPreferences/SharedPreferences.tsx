@@ -118,7 +118,7 @@ export class SharedPreferences extends PureComponent<Props, State> {
             width={11}
             tooltip="Not finding dashboard you want? Star it first, then it should appear in this select box."
           >
-            Home Dashboard
+            Домашняя приборная панель
           </FormLabel>
           <Select
             value={dashboards.find(dashboard => dashboard.id === homeDashboardId)}
