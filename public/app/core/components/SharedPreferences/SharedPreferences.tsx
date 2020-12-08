@@ -102,7 +102,7 @@ export class SharedPreferences extends PureComponent<Props, State> {
 
     return (
       <form className="section gf-form-group" onSubmit={this.onSubmitForm}>
-        <h3 className="page-heading">Preferences</h3>
+        <h3 className="page-heading">Предпочтения</h3>
         <div className="gf-form">
           <span className="gf-form-label width-11">UI Theme</span>
           <Select
@@ -118,7 +118,7 @@ export class SharedPreferences extends PureComponent<Props, State> {
             width={11}
             tooltip="Not finding dashboard you want? Star it first, then it should appear in this select box."
           >
-            Home Dashboard
+            Домашняя приборная панель
           </FormLabel>
           <Select
             value={dashboards.find(dashboard => dashboard.id === homeDashboardId)}

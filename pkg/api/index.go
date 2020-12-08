@@ -124,11 +124,11 @@ func (hs *HTTPServer) setIndexViewData(c *m.ReqContext) (*dtos.IndexViewData, er
 	}
 
 	dashboardChildNavs := []*dtos.NavLink{
-		{Text: "Home", Id: "home", Url: setting.AppSubUrl + "/", Icon: "gicon gicon-home", HideFromTabs: true},
-		{Text: "Divider", Divider: true, Id: "divider", HideFromTabs: true},
-		{Text: "Manage", Id: "manage-dashboards", Url: setting.AppSubUrl + "/dashboards", Icon: "gicon gicon-manage"},
-		{Text: "Playlists", Id: "playlists", Url: setting.AppSubUrl + "/playlists", Icon: "gicon gicon-playlists"},
-		{Text: "Snapshots", Id: "snapshots", Url: setting.AppSubUrl + "/dashboard/snapshots", Icon: "gicon gicon-snapshots"},
+		{Text: "Домашняя страница", Id: "home", Url: setting.AppSubUrl + "/", Icon: "gicon gicon-home", HideFromTabs: true},
+		{Text: "Делитель", Divider: true, Id: "divider", HideFromTabs: true},
+		{Text: "Управление", Id: "manage-dashboards", Url: setting.AppSubUrl + "/dashboards", Icon: "gicon gicon-manage"},
+		{Text: "Списки", Id: "playlists", Url: setting.AppSubUrl + "/playlists", Icon: "gicon gicon-playlists"},
+		{Text: "Снимки", Id: "snapshots", Url: setting.AppSubUrl + "/dashboard/snapshots", Icon: "gicon gicon-snapshots"},
 	}
 
 	data.NavTree = append(data.NavTree, &dtos.NavLink{
@@ -164,15 +164,15 @@ func (hs *HTTPServer) setIndexViewData(c *m.ReqContext) (*dtos.IndexViewData, er
 			Url:          setting.AppSubUrl + "/profile",
 			HideFromMenu: true,
 			Children: []*dtos.NavLink{
-				{Text: "Preferences", Id: "profile-settings", Url: setting.AppSubUrl + "/profile", Icon: "gicon gicon-preferences"},
-				{Text: "Change Password", Id: "change-password", Url: setting.AppSubUrl + "/profile/password", Icon: "fa fa-fw fa-lock", HideFromMenu: true},
+				{Text: "Предпочтения", Id: "profile-settings", Url: setting.AppSubUrl + "/profile", Icon: "gicon gicon-preferences"},
+				{Text: "Сменить пароль", Id: "change-password", Url: setting.AppSubUrl + "/profile/password", Icon: "fa fa-fw fa-lock", HideFromMenu: true},
 			},
 		}
 
 		if !setting.DisableSignoutMenu {
 			// add sign out first
 			profileNode.Children = append(profileNode.Children, &dtos.NavLink{
-				Text: "Sign out", Id: "sign-out", Url: setting.AppSubUrl + "/logout", Icon: "fa fa-fw fa-sign-out", Target: "_self",
+				Text: "Выход", Id: "sign-out", Url: setting.AppSubUrl + "/logout", Icon: "fa fa-fw fa-sign-out", Target: "_self",
 			})
 		}
 
@@ -279,7 +279,7 @@ func (hs *HTTPServer) setIndexViewData(c *m.ReqContext) (*dtos.IndexViewData, er
 					Url:         setting.AppSubUrl + "/plugins",
 				},
 				{
-					Text:        "Preferences",
+					Text:        "Предпочтения",
 					Id:          "org-settings",
 					Description: "Organization preferences",
 					Icon:        "gicon gicon-preferences",
