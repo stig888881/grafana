@@ -55,7 +55,7 @@ export class SettingsCtrl {
 
     if (this.dashboard.meta.canEdit) {
       this.sections.push({
-        title: 'General',
+        title: 'Главная',
         id: 'settings',
         icon: 'gicon gicon-preferences',
       });
@@ -94,7 +94,7 @@ export class SettingsCtrl {
 
     if (this.dashboard.meta.canMakeEditable) {
       this.sections.push({
-        title: 'General',
+        title: 'Главная',
         icon: 'gicon gicon-preferences',
         id: 'make_editable',
       });
