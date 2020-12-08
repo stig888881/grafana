@@ -9,13 +9,13 @@ export class FolderPageLoader {
         subTitle: 'Manage folder dashboards & permissions',
         url: '',
         text: '',
-        breadcrumbs: [{ title: 'Dashboards', url: 'dashboards' }],
+        breadcrumbs: [{ title: 'Панель управления', url: 'dashboards' }],
         children: [
           {
             active: activeChildId === 'manage-folder-dashboards',
             icon: 'fa fa-fw fa-th-large',
             id: 'manage-folder-dashboards',
-            text: 'Dashboards',
+            text: 'Панель управления',
             url: 'dashboards',
           },
           {
