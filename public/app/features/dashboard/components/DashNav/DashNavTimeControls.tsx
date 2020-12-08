@@ -46,7 +46,7 @@ export class DashNavTimeControls extends Component<Props> {
         onRefresh={this.onRefresh}
         value={dashboard.refresh}
         intervals={intervals}
-        tooltip="Обновить панель"
+        tooltip="Refresh dashboard"
       />
     );
   }
