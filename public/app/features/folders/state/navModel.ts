@@ -8,13 +8,13 @@ export function buildNavModel(folder: FolderDTO): NavModelItem {
     subTitle: 'Manage folder dashboards & permissions',
     url: '',
     text: folder.title,
-    breadcrumbs: [{ title: 'Dashboards', url: 'dashboards' }],
+    breadcrumbs: [{ title: 'Панель управления', url: 'dashboards' }],
     children: [
       {
         active: false,
         icon: 'fa fa-fw fa-th-large',
         id: `folder-dashboards-${folder.uid}`,
-        text: 'Dashboards',
+        text: 'Панель управления',
         url: folder.url,
       },
       {
