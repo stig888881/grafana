@@ -222,7 +222,7 @@ export class DashNav extends PureComponent<Props> {
         <div className="navbar-buttons navbar-buttons--actions">
           {canSave && (
             <DashNavButton
-              tooltip="Add panel"
+              tooltip="Добавить панель"
               classSuffix="add-panel"
               icon="gicon gicon-add-panel"
               onClick={onAddPanel}
@@ -231,7 +231,7 @@ export class DashNav extends PureComponent<Props> {
 
           {canStar && (
             <DashNavButton
-              tooltip="Mark as favorite"
+              tooltip="Пометить как значимый"
               classSuffix="star"
               icon={`${isStarred ? 'fa fa-star' : 'fa fa-star-o'}`}
               onClick={this.onStarDashboard}
@@ -240,7 +240,7 @@ export class DashNav extends PureComponent<Props> {
 
           {canShare && (
             <DashNavButton
-              tooltip="Share dashboard"
+              tooltip="Поделить панелью"
               classSuffix="share"
               icon="fa fa-share-square-o"
               onClick={this.onOpenShare}
@@ -253,7 +253,7 @@ export class DashNav extends PureComponent<Props> {
 
           {snapshotUrl && (
             <DashNavButton
-              tooltip="Open original dashboard"
+              tooltip="Открыть оригинальную панель"
               classSuffix="snapshot-origin"
               icon="gicon gicon-link"
               href={snapshotUrl}
@@ -262,7 +262,7 @@ export class DashNav extends PureComponent<Props> {
 
           {showSettings && (
             <DashNavButton
-              tooltip="Dashboard settings"
+              tooltip="Настройки панели"
               classSuffix="settings"
               icon="gicon gicon-cog"
               onClick={this.onOpenSettings}
@@ -272,7 +272,7 @@ export class DashNav extends PureComponent<Props> {
 
         <div className="navbar-buttons navbar-buttons--tv">
           <DashNavButton
-            tooltip="Cycle view mode"
+            tooltip="Режим просмотра цикла"
             classSuffix="tv"
             icon="fa fa-desktop"
             onClick={this.onToggleTVMode}
