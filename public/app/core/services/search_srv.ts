@@ -83,7 +83,7 @@ export class SearchSrv {
     return this.backendSrv.search({ starred: true, limit: 30 }).then(result => {
       if (result.length > 0) {
         sections['starred'] = {
-          title: 'Starred',
+          title: 'Избранные',
           icon: 'fa fa-star-o',
           score: -2,
           expanded: this.starredIsOpen,
