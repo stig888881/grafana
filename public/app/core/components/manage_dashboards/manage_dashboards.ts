@@ -52,7 +52,7 @@ export class ManageDashboardsCtrl {
   hasFilters = false;
   tagFilterOptions: any[];
   selectedTagFilter: any;
-  starredFilterOptions = [{ text: 'Filter by Starred', disabled: true }, { text: 'Yes' }, { text: 'No' }];
+  starredFilterOptions = [{ text: 'Сортировать по избранным', disabled: true }, { text: 'Yes' }, { text: 'No' }];
   selectedStarredFilter: any;
 
   // used when managing dashboards for a specific folder
