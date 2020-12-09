@@ -104,7 +104,7 @@ export class SharedPreferences extends PureComponent<Props, State> {
       <form className="section gf-form-group" onSubmit={this.onSubmitForm}>
         <h3 className="page-heading">Настройки</h3>
         <div className="gf-form">
-          <span className="gf-form-label width-11">UI Theme</span>
+          <span className="gf-form-label width-11">Тема пользовательского интерфейса</span>
           <Select
             isSearchable={false}
             value={themes.find(item => item.value === theme)}
@@ -131,7 +131,7 @@ export class SharedPreferences extends PureComponent<Props, State> {
           />
         </div>
         <div className="gf-form">
-          <label className="gf-form-label width-11">Timezone</label>
+          <label className="gf-form-label width-11">Часовой пояс</label>
           <Select
             isSearchable={false}
             value={timezones.find(item => item.value === timezone)}
@@ -142,7 +142,7 @@ export class SharedPreferences extends PureComponent<Props, State> {
         </div>
         <div className="gf-form-button-row">
           <button type="submit" className="btn btn-primary">
-            Save
+            Сохранить
           </button>
         </div>
       </form>
