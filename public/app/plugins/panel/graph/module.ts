@@ -201,7 +201,7 @@ class GraphCtrl extends MetricsPanelCtrl {
 
     if (datapointsCount === 0) {
       this.dataWarning = {
-        title: 'No data points',
+        title: 'Нет данных',
         tip: 'No datapoints returned from data query',
       };
     } else {
