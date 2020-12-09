@@ -132,9 +132,9 @@ func (hs *HTTPServer) setIndexViewData(c *m.ReqContext) (*dtos.IndexViewData, er
 	}
 
 	data.NavTree = append(data.NavTree, &dtos.NavLink{
-		Text:     "Dashboards",
+		Text:     "Панели управления",
 		Id:       "dashboards",
-		SubTitle: "Manage dashboards & folders",
+		SubTitle: "Управление информационными панелями и папками",
 		Icon:     "gicon gicon-dashboard",
 		Url:      setting.AppSubUrl + "/",
 		Children: dashboardChildNavs,
