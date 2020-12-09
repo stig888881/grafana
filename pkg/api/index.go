@@ -164,7 +164,7 @@ func (hs *HTTPServer) setIndexViewData(c *m.ReqContext) (*dtos.IndexViewData, er
 			Url:          setting.AppSubUrl + "/profile",
 			HideFromMenu: true,
 			Children: []*dtos.NavLink{
-				{Text: "Предпочтения", Id: "profile-settings", Url: setting.AppSubUrl + "/profile", Icon: "gicon gicon-preferences"},
+				{Text: "Настройки", Id: "profile-settings", Url: setting.AppSubUrl + "/profile", Icon: "gicon gicon-preferences"},
 				{Text: "Сменить пароль", Id: "change-password", Url: setting.AppSubUrl + "/profile/password", Icon: "fa fa-fw fa-lock", HideFromMenu: true},
 			},
 		}
