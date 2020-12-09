@@ -170,7 +170,7 @@ export default class ResponseParser {
     }
 
     if (!metricData.isDimensionRequired) {
-      dimensions.push({ text: 'None', value: 'None' });
+      dimensions.push({ text: 'Ни один', value: 'None' });
     }
 
     for (let i = 0; i < metricData.dimensions.length; i++) {
