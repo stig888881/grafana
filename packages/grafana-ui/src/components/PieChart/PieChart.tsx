@@ -137,7 +137,7 @@ export class PieChart extends PureComponent<Props> {
       return (
         <div className="piechart-panel">
           <div className="datapoints-warning">
-            <span className="small">No data points</span>
+            <span className="small">Нет данных</span>
           </div>
         </div>
       );
