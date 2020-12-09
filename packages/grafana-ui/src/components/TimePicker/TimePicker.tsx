@@ -23,14 +23,14 @@ export interface Props {
 }
 
 const defaultSelectOptions = [
-  { from: 'now-5m', to: 'now', display: 'Последние 5 минут', section: 3, active: false },
-  { from: 'now-15m', to: 'now', display: 'Последние 15 минут', section: 3, active: false },
-  { from: 'now-30m', to: 'now', display: 'Последние 30 минут', section: 3, active: false },
-  { from: 'now-1h', to: 'now', display: 'Последний час', section: 3, active: false },
-  { from: 'now-3h', to: 'now', display: 'Последние 3 часа', section: 3, active: false },
-  { from: 'now-6h', to: 'now', display: 'Последние 6 часов', section: 3, active: false },
-  { from: 'now-12h', to: 'now', display: 'Последние 12 часов', section: 3, active: false },
-  { from: 'now-24h', to: 'now', display: 'Последние 24 часа', section: 3, active: false },
+  { from: 'Сейчас-5 минут назад', to: 'Сейчас', display: 'Последние 5 минут', section: 3, active: false },
+  { from: 'Сейчас-15 минут назад', to: 'Сейчас', display: 'Последние 15 минут', section: 3, active: false },
+  { from: 'Сейчас-30 минут назад', to: 'Сейчас', display: 'Последние 30 минут', section: 3, active: false },
+  { from: 'Сейчас-1 час назад', to: 'Сейчас', display: 'Последний час', section: 3, active: false },
+  { from: 'Сейчас-3 часа назад', to: 'Сейчас', display: 'Последние 3 часа', section: 3, active: false },
+  { from: 'Сейчас-6 часа назад', to: 'Сейчас', display: 'Последние 6 часов', section: 3, active: false },
+  { from: 'Сейчас-12 часов назад', to: 'Сейчас', display: 'Последние 12 часов', section: 3, active: false },
+  { from: 'Сейчас-24 часа назад', to: 'Сейчас', display: 'Последние 24 часа', section: 3, active: false },
 ];
 const defaultPopoverOptions = {
   '0': [
