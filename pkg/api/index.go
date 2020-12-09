@@ -125,7 +125,7 @@ func (hs *HTTPServer) setIndexViewData(c *m.ReqContext) (*dtos.IndexViewData, er
 
 	dashboardChildNavs := []*dtos.NavLink{
 		{Text: "Домашняя страница", Id: "home", Url: setting.AppSubUrl + "/", Icon: "gicon gicon-home", HideFromTabs: true},
-		{Text: "Делитель", Divider: true, Id: "divider", HideFromTabs: true},
+		{Text: "Разделитель", Divider: true, Id: "divider", HideFromTabs: true},
 		{Text: "Управление", Id: "manage-dashboards", Url: setting.AppSubUrl + "/dashboards", Icon: "gicon gicon-manage"},
 		{Text: "Списки", Id: "playlists", Url: setting.AppSubUrl + "/playlists", Icon: "gicon gicon-playlists"},
 		{Text: "Снимки", Id: "snapshots", Url: setting.AppSubUrl + "/dashboard/snapshots", Icon: "gicon gicon-snapshots"},
