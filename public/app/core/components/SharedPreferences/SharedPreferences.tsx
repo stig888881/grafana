@@ -16,10 +16,10 @@ export interface State {
   dashboards: DashboardSearchHit[];
 }
 
-const themes = [{ value: '', label: 'Default' }, { value: 'dark', label: 'Dark' }, { value: 'light', label: 'Light' }];
+const themes = [{ value: '', label: 'По умолчанию' }, { value: 'dark', label: 'Dark' }, { value: 'light', label: 'Light' }];
 
 const timezones = [
-  { value: '', label: 'Default' },
+  { value: '', label: 'По умолчанию' },
   { value: 'browser', label: 'Local browser time' },
   { value: 'utc', label: 'UTC' },
 ];
@@ -43,7 +43,7 @@ export class SharedPreferences extends PureComponent<Props, State> {
     const dashboards = await this.backendSrv.search({ starred: true });
     const defaultDashboardHit: DashboardSearchHit = {
       id: 0,
-      title: 'Default',
+      title: 'По умолчанию',
       tags: [],
       type: '' as DashboardSearchHitType,
       uid: '',
