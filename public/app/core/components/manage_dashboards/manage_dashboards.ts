@@ -248,7 +248,7 @@ export class ManageDashboardsCtrl {
 
   initTagFilter() {
     return this.searchSrv.getDashboardTags().then((results: any) => {
-      this.tagFilterOptions = [{ term: 'Filter By Tag', disabled: true }].concat(results);
+      this.tagFilterOptions = [{ term: 'Сортировать по меткам', disabled: true }].concat(results);
       this.selectedTagFilter = this.tagFilterOptions[0];
     });
   }
