@@ -35,5 +35,5 @@ func UnstarDashboard(c *m.ReqContext) Response {
 		return Error(500, "Failed to unstar dashboard", err)
 	}
 
-	return Success("Dashboard unstarred")
+	return Success("Приборная панель не тронута")
 }
