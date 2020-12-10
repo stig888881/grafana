@@ -248,7 +248,7 @@ export class DashNav extends PureComponent<Props> {
           )}
 
           {canSave && (
-            <DashNavButton tooltip="Save dashboard" classSuffix="save" icon="fa fa-save" onClick={this.onSave} />
+            <DashNavButton tooltip="Сохранить панель" classSuffix="save" icon="fa fa-save" onClick={this.onSave} />
           )}
 
           {snapshotUrl && (
