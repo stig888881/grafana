@@ -20,7 +20,7 @@ func StarDashboard(c *m.ReqContext) Response {
 		return Error(500, "Failed to star dashboard", err)
 	}
 
-	return Success("Dashboard starred!")
+	return Success("Приоборная панель запушена!")
 }
 
 func UnstarDashboard(c *m.ReqContext) Response {
