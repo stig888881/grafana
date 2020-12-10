@@ -35,50 +35,6 @@
     </div>
   </div>
 
-  <div class="popover-box">
-    <div class="popover-box__header">
-      <span class="popover-box__title">Пользовательский диапозон</span>
-    </div>
-    <form name="timeForm" class="popover-box__body gf-timepicker-absolute-section max-width-28">
-      <label class="small">От</label>
-      <div class="gf-form-inline">
-        <div class="gf-form max-width-28">
-          <input type="text" class="gf-form-input input-large" ng-model="ctrl.editTimeRaw.from" input-datetime>
-        </div>
-        <div class="gf-form">
-          <button class="btn gf-form-btn btn-secondary" type="button" ng-click="openFromPicker=!openFromPicker">
-            <i class="fa fa-calendar"></i>
-          </button>
-        </div>
-      </div>
 
-      <div ng-if="openFromPicker">
-        <datepicker ng-model="ctrl.absolute.fromJs" class="gf-timepicker-component" show-weeks="false" starting-day="ctrl.firstDayOfWeek" ng-change="ctrl.absoluteFromChanged()"></datepicker>
-      </div>
-
-
-      <label class="small">До:</label>
-      <div class="gf-form-inline">
-        <div class="gf-form max-width-28">
-          <input type="text" class="gf-form-input input-large" ng-model="ctrl.editTimeRaw.to" input-datetime>
-        </div>
-        <div class="gf-form">
-          <button class="btn gf-form-btn btn-secondary" type="button" ng-click="openToPicker=!openToPicker">
-            <i class="fa fa-calendar"></i>
-          </button>
-        </div>
-      </div>
-
-      <div ng-if="openToPicker">
-        <datepicker ng-model="ctrl.absolute.toJs" class="gf-timepicker-component" show-weeks="false" starting-day="ctrl.firstDayOfWeek" ng-change="ctrl.absoluteToChanged()"></datepicker>
-      </div>
-
-      <div class="gf-form gf-form--flex-end m-t-1">
-        <div class="gf-form">
-          <button type="submit" class="btn gf-form-btn btn-primary" ng-click="ctrl.applyCustom();" ng-disabled="!timeForm.$valid">Принять</button>
-        </div>
-      </div>
-    </form>
-  </div>
 </div>
 
