@@ -53,17 +53,17 @@
 <script type="text/ng-template" id="shareLinkOptions.html">
   <div class="gf-form-group">
   	<gf-form-switch class="gf-form"
-  		label="Current time range" label-class="width-12" switch-class="max-width-6"
+  		label="Текущий временной диапазон" label-class="width-12" switch-class="max-width-6"
   		checked="options.forCurrent" on-change="buildUrl()">
   	</gf-form-switch>
   	<gf-form-switch class="gf-form"
-  		label="Template variables" label-class="width-12" switch-class="max-width-6"
+  		label="Переменные шаблона" label-class="width-12" switch-class="max-width-6"
   		checked="options.includeTemplateVars" on-change="buildUrl()">
   	</gf-form-switch>
   	<div class="gf-form">
-  		<span class="gf-form-label width-12">Theme</span>
+  		<span class="gf-form-label width-12">Тема</span>
   		<div class="gf-form-select-wrapper width-10">
-  			<select class="gf-form-input" ng-model="options.theme" ng-options="f as f for f in ['current', 'dark', 'light']" ng-change="buildUrl()"></select>
+  			<select class="gf-form-input" ng-model="options.theme" ng-options="f as f for f in ['текущий', 'темный', 'светлый']" ng-change="buildUrl()"></select>
   		</div>
   	</div>
   </div>
@@ -76,7 +76,7 @@
   	</div>
   	<div class="share-modal-content">
   		<p class="share-modal-info-text">
-  			Create a direct link to this dashboard or panel, customized with the options below.
+  			Создайте прямую ссылку на эту панель мониторинга или панель, настроенную с помощью следующих параметров.
   		</p>
   		<div ng-include src="'shareLinkOptions.html'"></div>
   		<div>
@@ -86,7 +86,7 @@
   						<input type="text" data-share-panel-url class="gf-form-input" ng-model="shareUrl">
   					</div>
   					<div class="gf-form">
-  						<button class="btn btn-inverse" clipboard-button="getShareUrl()">Copy</button>
+  						<button class="btn btn-inverse" clipboard-button="getShareUrl()">Копировать</button>
   					</div>
   				</div>
   			</div>
