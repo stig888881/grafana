@@ -17,14 +17,14 @@
           </div>
           <div class="login-button-group">
             <button type="submit" class="btn btn-large p-x-2" ng-if="!loggingIn" ng-click="submit();" ng-class="{'btn-inverse': !loginForm.$valid, 'btn-primary': loginForm.$valid}">
-              Log In
+              Вход
             </button>
             <button type="submit" class="btn btn-large p-x-2 btn-inverse btn-loading" ng-if="loggingIn">
               Logging In<span>.</span><span>.</span><span>.</span>
             </button>
             <div class="small login-button-forgot-password" ng-hide="ldapEnabled || authProxyEnabled">
               <a href="user/password/send-reset-email">
-                Forgot your password?
+               Забыли пароль ?
               </a>
             </div>
           </div>
