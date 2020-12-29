@@ -171,21 +171,21 @@ export class PanelCtrl {
     const menu = [];
     if (!this.panel.fullscreen && this.dashboard.meta.canEdit) {
       menu.push({
-        text: 'Duplicate',
+        text: 'Дубликат',
         click: 'ctrl.duplicate()',
         role: 'Editor',
         shortcut: 'p d',
       });
 
       menu.push({
-        text: 'Copy',
+        text: 'Копировать',
         click: 'ctrl.copyPanel()',
         role: 'Editor',
       });
     }
 
     menu.push({
-      text: 'Panel JSON',
+      text: 'Панель JSON',
       click: 'ctrl.editPanelJson(); dismiss();',
     });
 
