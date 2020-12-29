@@ -28,7 +28,7 @@ export class SearchSrv {
     return this.queryForRecentDashboards().then((result: any[]) => {
       if (result.length > 0) {
         sections['recent'] = {
-          title: 'Recent',
+          title: 'Недавний',
           icon: 'fa fa-clock-o',
           score: -1,
           removable: true,
