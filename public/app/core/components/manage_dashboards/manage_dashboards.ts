@@ -52,7 +52,7 @@ export class ManageDashboardsCtrl {
   hasFilters = false;
   tagFilterOptions: any[];
   selectedTagFilter: any;
-  starredFilterOptions = [{ text: 'Filter by Starred', disabled: true }, { text: 'Yes' }, { text: 'No' }];
+  starredFilterOptions = [{ text: 'Фильтровать по избранным', disabled: true }, { text: 'Yes' }, { text: 'No' }];
   selectedStarredFilter: any;
 
   // used when managing dashboards for a specific folder
@@ -248,7 +248,7 @@ export class ManageDashboardsCtrl {
 
   initTagFilter() {
     return this.searchSrv.getDashboardTags().then((results: any) => {
-      this.tagFilterOptions = [{ term: 'Filter By Tag', disabled: true }].concat(results);
+      this.tagFilterOptions = [{ term: 'Фильтровать по меткам', disabled: true }].concat(results);
       this.selectedTagFilter = this.tagFilterOptions[0];
     });
   }

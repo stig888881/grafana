@@ -46,11 +46,11 @@ API.txt for details.
 		var isAM = hours < 12;
 
 		if (monthNames == null) {
-			monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+			monthNames = ["Янв", "Фев", "Март", "Апр", "Май", "Июнь", "Июль", "Авг", "Сен", "Окт", "Ноя", "Дек"];
 		}
 
 		if (dayNames == null) {
-			dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+			dayNames = ["Воск", "Пон", "Вт", "Сред", "Чет", "Пят", "Суб"];
 		}
 
 		var hours12;

@@ -89,7 +89,7 @@
         <select
           class="gf-form-input"
           ng-model="ctrl.panel.tooltip.sort"
-          ng-options="f.value as f.text for f in [{text: 'None', value: 0}, {text: 'Increasing', value: 1}, {text: 'Decreasing', value: 2}]"
+          ng-options="f.value as f.text for f in [{text: 'Ни один', value: 0}, {text: 'Возрастающий', value: 1}, {text: 'Убывающий', value: 2}]"
           ng-change="ctrl.render()"
         ></select>
       </div>

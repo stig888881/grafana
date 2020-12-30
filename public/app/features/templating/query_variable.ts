@@ -3,7 +3,7 @@ import { Variable, containsVariable, assignModelProperties, variableTypes } from
 import { stringToJsRegex } from '@grafana/ui';
 
 function getNoneOption() {
-  return { text: 'None', value: '', isNone: true };
+  return { text: 'Ни один', value: '', isNone: true };
 }
 
 export class QueryVariable implements Variable {

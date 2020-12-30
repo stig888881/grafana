@@ -1,7 +1,7 @@
 <div class="dashboard-list">
   <div class="page-action-bar page-action-bar--narrow" ng-hide="ctrl.folderId && !ctrl.hasFilters && ctrl.sections.length === 0">
     <label class="gf-form gf-form--grow gf-form--has-input-icon">
-      <input type="text" class="gf-form-input max-width-30" placeholder="Find Dashboard by name" tabindex="1" give-focus="true" ng-model="ctrl.query.query" ng-model-options="{ debounce: 500 }" spellcheck='false' ng-change="ctrl.onQueryChange()" />
+      <input type="text" class="gf-form-input max-width-30" placeholder="Найти панель по имени" tabindex="1" give-focus="true" ng-model="ctrl.query.query" ng-model-options="{ debounce: 500 }" spellcheck='false' ng-change="ctrl.onQueryChange()" />
       <i class="gf-form-input-icon fa fa-search"></i>
     </label>
     <div class="page-action-bar__spacer"></div>
@@ -33,14 +33,14 @@
       <div class="gf-form" ng-show="ctrl.query.starred">
         <label class="gf-form-label">
           <a class="pointer" ng-click="ctrl.removeStarred()">
-            <i class="fa fa-fw fa-check"></i> Starred
+            <i class="fa fa-fw fa-check"></i> Избранные
           </a>
         </label>
       </div>
       <div class="gf-form">
         <label class="gf-form-label">
           <a class="pointer" ng-click="ctrl.clearFilters()" bs-tooltip="'Clear current search query and filters'">
-            <i class="fa fa-remove"></i>&nbsp;Clear
+            <i class="fa fa-remove"></i>&nbsp;Отчистить
           </a>
         </label>
       </div>

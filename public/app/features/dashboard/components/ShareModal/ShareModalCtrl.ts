@@ -19,7 +19,7 @@ export function ShareModalCtrl($scope, $rootScope, $location, $timeout, timeSrv,
     $scope.tabs = [{ title: 'Ссылка', src: 'shareLink.html' }];
 
     if ($scope.modeSharePanel) {
-      $scope.modalTitle = 'Панель Общего Доступа';
+      $scope.modalTitle = 'Поделиться панелью';
       $scope.tabs.push({ title: 'Встроить', src: 'shareEmbed.html' });
     } else {
       $scope.modalTitle = 'Поделиться';
