@@ -32,8 +32,8 @@
   		<div ng-include src="'shareLinkOptions.html'"></div>
 
        <p class="share-modal-info-text">
-  		 The html code below can be pasted and included in another web page. Unless anonymous access
-  		 is enabled, the user viewing that page need to be signed into grafana for the graph to load.
+Приведенный ниже html-код можно вставить и включить в другую веб-страницу. Если только анонимный доступ
+если этот параметр включен, пользователь, просматривающий эту страницу, должен войти в grafana, чтобы загрузить график.
        </p>
 
        <div class="gf-form-group gf-form--grow">
@@ -61,9 +61,9 @@
   		checked="options.includeTemplateVars" on-change="buildUrl()">
   	</gf-form-switch>
   	<div class="gf-form">
-  		<span class="gf-form-label width-12">Theme</span>
+  		<span class="gf-form-label width-12">Тема</span>
   		<div class="gf-form-select-wrapper width-10">
-  			<select class="gf-form-input" ng-model="options.theme" ng-options="f as f for f in ['current', 'dark', 'light']" ng-change="buildUrl()"></select>
+  			<select class="gf-form-input" ng-model="options.theme" ng-options="f as f for f in ['текущая', 'темная', 'светлая']" ng-change="buildUrl()"></select>
   		</div>
   	</div>
   </div>
@@ -76,7 +76,7 @@
   	</div>
   	<div class="share-modal-content">
   		<p class="share-modal-info-text">
-  			Create a direct link to this dashboard or panel, customized with the options below.
+Создайте прямую ссылку на эту панель мониторинга или панель, настроенную с помощью приведенных ниже параметров.
   		</p>
   		<div ng-include src="'shareLinkOptions.html'"></div>
   		<div>
@@ -92,7 +92,7 @@
   			</div>
   		</div>
   		<div class="gf-form" ng-show="modeSharePanel">
-  			<a href="{{imageUrl}}" target="_blank"><i class="fa fa-camera"></i> Direct link rendered image</a>
+  			<a href="{{imageUrl}}" target="_blank"><i class="fa fa-camera"></i> Прямая ссылка визуализированное изображение</a>
   		</div>
   	</div>
 </script>
