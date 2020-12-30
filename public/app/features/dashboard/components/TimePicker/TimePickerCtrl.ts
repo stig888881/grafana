@@ -7,8 +7,8 @@ import * as rangeUtil from '@grafana/ui/src/utils/rangeutil';
 export class TimePickerCtrl {
   static tooltipFormat = 'MMM D, YYYY HH:mm:ss';
   static defaults = {
-    time_options: ['5m', '15m', '1h', '6h', '12h', '24h', '2d', '7d', '30d'],
-    refresh_intervals: ['5s', '10s', '30s', '1m', '5m', '15m', '30m', '1h', '2h', '1d'],
+    time_options: ['5м', '15м', '1ч', '6ч', '12ч', '24ч', '2д', '7д', '30д'],
+    refresh_intervals: ['5с', '10с', '30с', '1м', '5м', '15м', '30м', '1ч', '2ч', '1д'],
   };
 
   dashboard: any;
