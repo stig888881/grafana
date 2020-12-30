@@ -28,7 +28,7 @@ const template = `
                        dashboard-id="ctrl.clone.id">
       </folder-picker>
       <div class="gf-form-inline">
-        <gf-form-switch class="gf-form" label="Copy tags" label-class="width-8" checked="ctrl.copyTags">
+        <gf-form-switch class="gf-form" label="Копировать теги" label-class="width-8" checked="ctrl.copyTags">
         </gf-form-switch>
       </div>
 		</div>
