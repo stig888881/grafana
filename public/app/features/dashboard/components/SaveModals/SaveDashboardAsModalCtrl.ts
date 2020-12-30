@@ -5,7 +5,7 @@ const template = `
 	<div class="modal-header">
 		<h2 class="modal-header-title">
 			<i class="fa fa-copy"></i>
-			<span class="p-l-1">Save As...</span>
+			<span class="p-l-1">Сохранить в...</span>
 		</h2>
 
 		<a class="modal-header-close" ng-click="ctrl.dismiss();">
@@ -16,7 +16,7 @@ const template = `
 	<form name="ctrl.saveForm" class="modal-content" novalidate>
 		<div class="p-t-2">
 			<div class="gf-form">
-				<label class="gf-form-label width-8">New name</label>
+				<label class="gf-form-label width-8">Новое имя</label>
 				<input type="text" class="gf-form-input" ng-model="ctrl.clone.title" give-focus="true" required>
 			</div>
       <folder-picker initial-folder-id="ctrl.folderId"
@@ -34,8 +34,8 @@ const template = `
 		</div>
 
 		<div class="gf-form-button-row text-center">
-			<button type="submit" class="btn btn-primary" ng-click="ctrl.save()" ng-disabled="!ctrl.isValidFolderSelection">Save</button>
-			<a class="btn-text" ng-click="ctrl.dismiss();">Cancel</a>
+			<button type="submit" class="btn btn-primary" ng-click="ctrl.save()" ng-disabled="!ctrl.isValidFolderSelection">Сохранить</button>
+			<a class="btn-text" ng-click="ctrl.dismiss();">Выход</a>
 		</div>
 	</form>
 </div>
