@@ -13,10 +13,10 @@ export class ShareSnapshotCtrl {
     $scope.step = 1;
 
     $scope.expireOptions = [
-      { text: '1 Hour', value: 60 * 60 },
-      { text: '1 Day', value: 60 * 60 * 24 },
-      { text: '7 Days', value: 60 * 60 * 24 * 7 },
-      { text: 'Never', value: 0 },
+      { text: '1 час', value: 60 * 60 },
+      { text: '1 день', value: 60 * 60 * 24 },
+      { text: '7 дней', value: 60 * 60 * 24 * 7 },
+      { text: 'Никогда', value: 0 },
     ];
 
     $scope.accessOptions = [
