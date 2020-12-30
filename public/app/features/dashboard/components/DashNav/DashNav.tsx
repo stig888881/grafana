@@ -222,7 +222,7 @@ export class DashNav extends PureComponent<Props> {
         <div className="navbar-buttons navbar-buttons--actions">
           {canSave && (
             <DashNavButton
-              tooltip="Добавить панель"
+              tooltip="Add panel"
               classSuffix="add-panel"
               icon="gicon gicon-add-panel"
               onClick={onAddPanel}
@@ -253,7 +253,7 @@ export class DashNav extends PureComponent<Props> {
 
           {snapshotUrl && (
             <DashNavButton
-              tooltip="Открыть оригинальную панель"
+              tooltip="Open original dashboard"
               classSuffix="snapshot-origin"
               icon="gicon gicon-link"
               href={snapshotUrl}
@@ -262,7 +262,7 @@ export class DashNav extends PureComponent<Props> {
 
           {showSettings && (
             <DashNavButton
-              tooltip="Настройки панели"
+              tooltip="Dashboard settings"
               classSuffix="settings"
               icon="gicon gicon-cog"
               onClick={this.onOpenSettings}

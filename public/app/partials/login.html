@@ -36,7 +36,7 @@
           </div>
           <div>
             <span class="login-divider-text">
-              <span ng-hide="disableLoginForm">or</span>
+              <span ng-hide="disableLoginForm">или</span>
             </span>
           </div>
           <div>
@@ -71,36 +71,36 @@
         </div>
         <div class="login-signup-box" ng-show="!disableUserSignUp">
           <div class="login-signup-title p-r-1">
-            New to Grafana?
+            Впервые в Grafana?
           </div>
           <a href="signup" class="btn btn-medium btn-signup btn-p-x-2">
-            Sign Up
+            Подписаться
           </a>
         </div>
       </div>
       <div class="login-inner-box remove hidden" id="change-password-view">
         <div class="text-left login-change-password-info">
-          <h5>Change Password</h5>
-          Before you can get started with awesome dashboards we need you to make your account more secure by changing your password.
-          <br />You can change your password again later.
+          <h5>Замена пароля</h5>
+          Прежде чем вы сможете начать работу , нам нужно, чтобы вы сделали свою учетную запись более безопасной, изменив пароль.
+          <br />Позже вы можете снова сменить пароль.
         </div>
         <form class="login-form-group gf-form-group">
           <div class="login-form">
             <input type="password" id="newPassword" name="newPassword" class="gf-form-input login-form-input" required ng-model='command.newPassword'
-              placeholder="New password">
+              placeholder="Новый пароль">
           </div>
           <div class="login-form">
-            <input type="password" name="confirmNew" class="gf-form-input login-form-input" required ng-model="command.confirmNew" placeholder="Confirm new password">
+            <input type="password" name="confirmNew" class="gf-form-input login-form-input" required ng-model="command.confirmNew" placeholder="Подтвердите пароль">
           </div>
           <div class="login-button-group login-button-group--right text-right">
             <a class="btn btn-link" ng-click="skip();">
-              Skip
+              Пропустить
               <info-popover mode="no-padding">
-                If you skip you will be prompted to change password next time you login.
+                Если вы пропустите публикацию, вам будет предложено изменить пароль при следующем входе в систему.
               </info-popover>
             </a>
             <button type="submit" class="btn btn-large p-x-2" ng-click="changePassword();" ng-class="{'btn-inverse': !loginForm.$valid, 'btn-primary': loginForm.$valid}">
-              Save
+              Сохранить
             </button>
           </div>
         </form>
