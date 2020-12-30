@@ -23,7 +23,7 @@ const EmptyListCTA: React.FunctionComponent<Props> = props => {
   const footer = proTip ? (
     <span>
       <i className="fa fa-rocket" />
-      <> ProTip: {proTip} </>
+      <> Подсказка: {proTip} </>
       <a href={proTipLink} target={proTipTarget} className="text-link">
         {proTipLinkTitle}
       </a>
