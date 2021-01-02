@@ -87,7 +87,7 @@ export class GettingStarted extends PureComponent<PanelProps, State> {
       },
       {
         title: 'Install apps & plugins',
-        cta: 'Обозреватель репозиторий плагинов',
+        cta: 'Посетить репозиторий плагинов',
         icon: 'gicon gicon-plugins',
         href: 'https://grafana.com/plugins?utm_source=grafana_getting_started',
         check: () => {
