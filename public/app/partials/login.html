@@ -74,14 +74,14 @@
             Впервые в Grafana?
           </div>
           <a href="signup" class="btn btn-medium btn-signup btn-p-x-2">
-            Подписаться
+            Зарегистрироваться
           </a>
         </div>
       </div>
       <div class="login-inner-box remove hidden" id="change-password-view">
         <div class="text-left login-change-password-info">
-          <h5>Замена пароля</h5>
-          Прежде чем вы сможете начать работу , нам нужно, чтобы вы сделали свою учетную запись более безопасной, изменив пароль.
+          <h5>Смена пароля</h5>
+          Прежде чем вы сможете начать работу, нам нужно, чтобы вы сделали свою учетную запись более безопасной, изменив пароль.
           <br />Позже вы можете снова сменить пароль.
         </div>
         <form class="login-form-group gf-form-group">
@@ -96,7 +96,7 @@
             <a class="btn btn-link" ng-click="skip();">
               Пропустить
               <info-popover mode="no-padding">
-                Если вы пропустите публикацию, вам будет предложено изменить пароль при следующем входе в систему.
+                Если пропустите, вам будет предложено изменить пароль при следующем входе в систему.
               </info-popover>
             </a>
             <button type="submit" class="btn btn-large p-x-2" ng-click="changePassword();" ng-class="{'btn-inverse': !loginForm.$valid, 'btn-primary': loginForm.$valid}">
