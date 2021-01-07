@@ -2,7 +2,7 @@
   <div class="section gf-form-group">
     <h5 class="section-heading">Options</h5>
     <div class="gf-form">
-      <span class="gf-form-label width-8">Show</span>
+      <span class="gf-form-label width-8">Показать</span>
       <div class="gf-form-select-wrapper max-width-15">
         <select class="gf-form-input" ng-model="ctrl.panel.show" ng-options="f.value as f.text for f in ctrl.showOptions" ng-change="ctrl.onRefresh()"></select>
       </div>
@@ -20,13 +20,13 @@
     <gf-form-switch class="gf-form" label="Alerts from this dashboard" label-class="width-18" checked="ctrl.panel.onlyAlertsOnDashboard" on-change="ctrl.updateStateFilter()"></gf-form-switch>
   </div>
   <div class="section gf-form-group" ng-show="ctrl.panel.show === 'current'">
-    <h5 class="section-heading">Filter</h5>
+    <h5 class="section-heading">Фильтр</h5>
     <div class="gf-form">
-      <span class="gf-form-label width-8">Alert name</span>
+      <span class="gf-form-label width-8">Имя предупреждения</span>
       <input type="text" class="gf-form-input max-width-15" ng-model="ctrl.panel.nameFilter" placeholder="Alert name query" ng-change="ctrl.onRefresh()" />
     </div>
     <div class="gf-form">
-      <span class="gf-form-label width-8">Dashboard title</span>
+      <span class="gf-form-label width-8">Название панели мониторинга</span>
       <input type="text" class="gf-form-input" placeholder="Dashboard title query" ng-model="ctrl.panel.dashboardFilter" ng-change="ctrl.onRefresh()" ng-model-onblur>
     </div>
     <div class="gf-form">
@@ -38,7 +38,7 @@
       </folder-picker>
     </div>
     <div class="gf-form">
-        <span class="gf-form-label width-8">Dashboard tags</span>
+        <span class="gf-form-label width-8">Теги приборной панели</span>
         <bootstrap-tagsinput ng-model="ctrl.panel.dashboardTags" tagclass="label label-tag" placeholder="add tags" on-tags-updated="ctrl.refresh()">
         </bootstrap-tagsinput>
     </div>
