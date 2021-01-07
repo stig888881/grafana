@@ -4,7 +4,7 @@
 		<h5 class="section-heading" ng-show="$index === 0">Левый Y</h5>
 		<h5 class="section-heading" ng-show="$index === 1">Правый Y</h5>
 
-		<gf-form-switch class="gf-form" label="Show" label-class="width-6" checked="yaxis.show" on-change="ctrl.render()"></gf-form-switch>
+		<gf-form-switch class="gf-form" label="Показать" label-class="width-6" checked="yaxis.show" on-change="ctrl.render()"></gf-form-switch>
 
 		<div ng-if="yaxis.show">
 			<div class="gf-form">
@@ -22,23 +22,23 @@
 
 			<div class="gf-form-inline">
 				<div class="gf-form">
-					<label class="gf-form-label width-6">Y-Min</label>
-					<input type="text" class="gf-form-input width-5" placeholder="auto" empty-to-null ng-model="yaxis.min" ng-change="ctrl.render()" ng-model-onblur>
+					<label class="gf-form-label width-6">Y-Мин</label>
+					<input type="text" class="gf-form-input width-5" placeholder="авто" empty-to-null ng-model="yaxis.min" ng-change="ctrl.render()" ng-model-onblur>
 				</div>
 				<div class="gf-form">
-					<label class="gf-form-label width-6">Y-Max</label>
-					<input type="text" class="gf-form-input width-5" placeholder="auto" empty-to-null ng-model="yaxis.max" ng-change="ctrl.render()" ng-model-onblur>
+					<label class="gf-form-label width-6">Y-Макс</label>
+					<input type="text" class="gf-form-input width-5" placeholder="авто" empty-to-null ng-model="yaxis.max" ng-change="ctrl.render()" ng-model-onblur>
 				</div>
 			</div>
 
 		<div ng-if="yaxis.show">
 			<div class="gf-form">
-				<label class="gf-form-label width-6">Decimals</label>
-				<input type="number" class="gf-form-input max-width-20" placeholder="auto" empty-to-null bs-tooltip="'Override automatic decimal precision for y-axis'" data-placement="right" ng-model="yaxis.decimals" ng-change="ctrl.render()" ng-model-onblur>
+				<label class="gf-form-label width-6">Десятичные</label>
+				<input type="number" class="gf-form-input max-width-20" placeholder="авто" empty-to-null bs-tooltip="'Override automatic decimal precision for y-axis'" data-placement="right" ng-model="yaxis.decimals" ng-change="ctrl.render()" ng-model-onblur>
 			</div>
 
 			<div class="gf-form">
-				<label class="gf-form-label width-6">Label</label>
+				<label class="gf-form-label width-6">Метка</label>
 				<input type="text" class="gf-form-input max-width-20" ng-model="yaxis.label" ng-change="ctrl.render()" ng-model-onblur>
 			</div>
 		</div>
@@ -57,23 +57,23 @@
 
 		<!-- Series mode -->
 		<div class="gf-form" ng-if="ctrl.panel.xaxis.mode === 'series'">
-			<label class="gf-form-label width-6">Value</label>
+			<label class="gf-form-label width-6">Значение</label>
       <metric-segment-model property="ctrl.panel.xaxis.values[0]" options="ctrl.xAxisStatOptions" on-change="ctrl.xAxisValueChanged()" custom="false" css-class="width-10" select-mode="true"></metric-segment-model>
 		</div>
 
 		<!-- Histogram mode -->
 		<div class="gf-form" ng-if="ctrl.panel.xaxis.mode === 'histogram'">
-			<label class="gf-form-label width-6">Buckets</label>
+			<label class="gf-form-label width-6">Сегмент</label>
 			<input type="number" class="gf-form-input max-width-8" ng-model="ctrl.panel.xaxis.buckets" placeholder="auto" ng-change="ctrl.render()" ng-model-onblur bs-tooltip="'Number of buckets'" data-placement="right">
 		</div>
 
 		<div class="gf-form-inline" ng-if="ctrl.panel.xaxis.mode === 'histogram'">
 			<div class="gf-form">
-				<label class="gf-form-label width-6">X-Min</label>
+				<label class="gf-form-label width-6">X-мин</label>
 				<input type="number" class="gf-form-input width-5" placeholder="auto" empty-to-null ng-model="ctrl.panel.xaxis.min" ng-change="ctrl.render()" ng-model-onblur>
 			</div>
 			<div class="gf-form">
-				<label class="gf-form-label width-6">X-Max</label>
+				<label class="gf-form-label width-6">X-макс</label>
 				<input type="number" class="gf-form-input width-5" placeholder="auto" empty-to-null ng-model="ctrl.panel.xaxis.max" ng-change="ctrl.render()" ng-model-onblur>
 			</div>
 		</div>
@@ -81,10 +81,10 @@
 		<div>
 			<br/>
 			<h5 class="section-heading">Ось-Y</h5>
-			<gf-form-switch class="gf-form" label="Align" tooltip="Align left and right Y-axes" label-class="width-6" switch-class="width-5" checked="ctrl.panel.yaxis.align" on-change="ctrl.render()"></gf-form-switch>
+			<gf-form-switch class="gf-form" label="Выровнять" tooltip="Align left and right Y-axes" label-class="width-6" switch-class="width-5" checked="ctrl.panel.yaxis.align" on-change="ctrl.render()"></gf-form-switch>
 			<div class="gf-form" ng-show="ctrl.panel.yaxis.align">
 				<label class="gf-form-label width-6">
-					Level
+					Уровень
 				</label>
 				<input type="number" class="gf-form-input width-5" placeholder="0" ng-model="ctrl.panel.yaxis.alignLevel" ng-change="ctrl.render()" ng-model-onblur bs-tooltip="'Alignment of Y-axes are based on this value, starting from Y=0'" data-placement="right">
 			</div>
