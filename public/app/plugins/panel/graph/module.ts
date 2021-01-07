@@ -138,10 +138,10 @@ class GraphCtrl extends MetricsPanelCtrl {
   }
 
   onInitEditMode() {
-    this.addEditorTab('Display options', 'public/app/plugins/panel/graph/tab_display.html');
-    this.addEditorTab('Axes', axesEditorComponent);
-    this.addEditorTab('Legend', 'public/app/plugins/panel/graph/tab_legend.html');
-    this.addEditorTab('Thresholds & Time Regions', 'public/app/plugins/panel/graph/tab_thresholds_time_regions.html');
+    this.addEditorTab('Параметры отображения', 'public/app/plugins/panel/graph/tab_display.html');
+    this.addEditorTab('Оси', axesEditorComponent);
+    this.addEditorTab('Обозначение', 'public/app/plugins/panel/graph/tab_legend.html');
+    this.addEditorTab('Пороговые Значения И Временные Области', 'public/app/plugins/panel/graph/tab_thresholds_time_regions.html');
     this.subTabIndex = 0;
   }
 
