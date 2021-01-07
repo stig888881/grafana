@@ -35,7 +35,7 @@ export class GettingStarted extends PureComponent<PanelProps, State> {
 
     this.steps = [
       {
-        title: 'Install Grafana',
+        title: 'Установка Grafana',
         icon: 'icon-gf icon-gf-check',
         href: 'http://docs.grafana.org/',
         target: '_blank',
