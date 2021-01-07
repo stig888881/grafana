@@ -138,8 +138,8 @@ export class HeatmapCtrl extends MetricsPanelCtrl {
   }
 
   onInitEditMode() {
-    this.addEditorTab('Axes', axesEditor, 2);
-    this.addEditorTab('Display', heatmapDisplayEditor, 3);
+    this.addEditorTab('Оси', axesEditor, 2);
+    this.addEditorTab('Монитор', heatmapDisplayEditor, 3);
     this.unitFormats = kbn.getUnitFormats();
   }
 
