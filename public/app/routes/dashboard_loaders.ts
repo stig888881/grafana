@@ -61,7 +61,7 @@ export class NewDashboardCtrl {
           folderId: Number($routeParams.folderId),
         },
         dashboard: {
-          title: 'New dashboard',
+          title: 'Новая панель',
           panels: [
             {
               type: 'add-panel',
