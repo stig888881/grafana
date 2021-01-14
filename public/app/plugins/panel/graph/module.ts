@@ -146,8 +146,8 @@ class GraphCtrl extends MetricsPanelCtrl {
   }
 
   onInitPanelActions(actions) {
-    actions.push({ text: 'Export CSV', click: 'ctrl.exportCsv()' });
-    actions.push({ text: 'Toggle legend', click: 'ctrl.toggleLegend()', shortcut: 'p l' });
+    actions.push({ text: 'Экспорт CSV', click: 'ctrl.exportCsv()' });
+    actions.push({ text: 'Переключить обозначение', click: 'ctrl.toggleLegend()', shortcut: 'p l' });
   }
 
   issueQueries(datasource) {
@@ -201,7 +201,7 @@ class GraphCtrl extends MetricsPanelCtrl {
 
     if (datapointsCount === 0) {
       this.dataWarning = {
-        title: 'No data points',
+        title: 'Нет данных',
         tip: 'No datapoints returned from data query',
       };
     } else {

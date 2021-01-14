@@ -4,8 +4,8 @@ import { SelectOptionItem } from '../Select/Select';
 import { Tooltip } from '../Tooltip/Tooltip';
 import { ButtonSelect } from '../Select/ButtonSelect';
 
-export const offOption = { label: 'Off', value: '' };
-export const defaultIntervals = ['5s', '10s', '30s', '1m', '5m', '15m', '30m', '1h', '2h', '1d'];
+export const offOption = { label: 'Выключить', value: '' };
+export const defaultIntervals = ['5с', '10с', '30с', '1м', '5м', '15м', '30м', '1ч', '2ч', '1д'];
 
 export interface Props {
   intervals?: string[];

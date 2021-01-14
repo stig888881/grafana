@@ -10,7 +10,7 @@ const alertQueryDef = new QueryPartDef({
       type: 'string',
       options: ['10s', '1m', '5m', '10m', '15m', '1h', '24h', '48h'],
     },
-    { name: 'to', type: 'string', options: ['now', 'now-1m', 'now-5m', 'now-10m', 'now-1h'] },
+    { name: 'to', type: 'string', options: ['Сейчас', 'Сейча- 1 минуту назад', '', 'Сейчас-10 минут назад', 'Сейчас-1 час назад'] },
   ],
   defaultParams: ['#A', '15m', 'now', 'avg'],
 });

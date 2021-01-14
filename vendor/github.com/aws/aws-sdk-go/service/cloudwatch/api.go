@@ -5271,7 +5271,7 @@ const (
 	StandardUnitCountSecond = "Count/Second"
 
 	// StandardUnitNone is a StandardUnit enum value
-	StandardUnitNone = "None"
+	StandardUnitNone = "Ни один"
 )
 
 const (

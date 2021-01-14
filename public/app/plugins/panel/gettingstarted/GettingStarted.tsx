@@ -44,7 +44,7 @@ export class GettingStarted extends PureComponent<PanelProps, State> {
       },
       {
         title: 'Create your first data source',
-        cta: 'Add data source',
+        cta: 'Добавить источник данных',
         icon: 'gicon gicon-datasources',
         href: 'datasources/new?gettingstarted',
         check: () => {
@@ -61,7 +61,7 @@ export class GettingStarted extends PureComponent<PanelProps, State> {
       },
       {
         title: 'Create your first dashboard',
-        cta: 'New dashboard',
+        cta: 'Новая приборная панель',
         icon: 'gicon gicon-dashboard',
         href: 'dashboard/new?gettingstarted',
         check: () => {
@@ -74,7 +74,7 @@ export class GettingStarted extends PureComponent<PanelProps, State> {
       },
       {
         title: 'Invite your team',
-        cta: 'Add Users',
+        cta: 'Добавить пользователя',
         icon: 'gicon gicon-team',
         href: 'org/users?gettingstarted',
         check: () => {
@@ -87,7 +87,7 @@ export class GettingStarted extends PureComponent<PanelProps, State> {
       },
       {
         title: 'Install apps & plugins',
-        cta: 'Explore plugin repository',
+        cta: 'Посетить репозиторий плагинов',
         icon: 'gicon gicon-plugins',
         href: 'https://grafana.com/plugins?utm_source=grafana_getting_started',
         check: () => {

@@ -231,7 +231,7 @@ export class DashNav extends PureComponent<Props> {
 
           {canStar && (
             <DashNavButton
-              tooltip="Mark as favorite"
+              tooltip="Закрепить"
               classSuffix="star"
               icon={`${isStarred ? 'fa fa-star' : 'fa fa-star-o'}`}
               onClick={this.onStarDashboard}
@@ -240,7 +240,7 @@ export class DashNav extends PureComponent<Props> {
 
           {canShare && (
             <DashNavButton
-              tooltip="Share dashboard"
+              tooltip="Поделиться панелью"
               classSuffix="share"
               icon="fa fa-share-square-o"
               onClick={this.onOpenShare}
@@ -248,7 +248,7 @@ export class DashNav extends PureComponent<Props> {
           )}
 
           {canSave && (
-            <DashNavButton tooltip="Save dashboard" classSuffix="save" icon="fa fa-save" onClick={this.onSave} />
+            <DashNavButton tooltip="Сохранить панель" classSuffix="save" icon="fa fa-save" onClick={this.onSave} />
           )}
 
           {snapshotUrl && (
@@ -272,7 +272,7 @@ export class DashNav extends PureComponent<Props> {
 
         <div className="navbar-buttons navbar-buttons--tv">
           <DashNavButton
-            tooltip="Cycle view mode"
+            tooltip="Переключить режим просмотра"
             classSuffix="tv"
             icon="fa fa-desktop"
             onClick={this.onToggleTVMode}

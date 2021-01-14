@@ -16,10 +16,10 @@ export interface State {
   dashboards: DashboardSearchHit[];
 }
 
-const themes = [{ value: '', label: 'Default' }, { value: 'dark', label: 'Dark' }, { value: 'light', label: 'Light' }];
+const themes = [{ value: '', label: 'По умолчанию' }, { value: 'dark', label: 'Dark' }, { value: 'light', label: 'Light' }];
 
 const timezones = [
-  { value: '', label: 'Default' },
+  { value: '', label: 'По умолчанию' },
   { value: 'browser', label: 'Local browser time' },
   { value: 'utc', label: 'UTC' },
 ];
@@ -43,7 +43,7 @@ export class SharedPreferences extends PureComponent<Props, State> {
     const dashboards = await this.backendSrv.search({ starred: true });
     const defaultDashboardHit: DashboardSearchHit = {
       id: 0,
-      title: 'Default',
+      title: 'По умолчанию',
       tags: [],
       type: '' as DashboardSearchHitType,
       uid: '',
@@ -102,9 +102,9 @@ export class SharedPreferences extends PureComponent<Props, State> {
 
     return (
       <form className="section gf-form-group" onSubmit={this.onSubmitForm}>
-        <h3 className="page-heading">Preferences</h3>
+        <h3 className="page-heading">Настройки</h3>
         <div className="gf-form">
-          <span className="gf-form-label width-11">UI Theme</span>
+          <span className="gf-form-label width-11">Тема интерфейса</span>
           <Select
             isSearchable={false}
             value={themes.find(item => item.value === theme)}
@@ -118,7 +118,7 @@ export class SharedPreferences extends PureComponent<Props, State> {
             width={11}
             tooltip="Not finding dashboard you want? Star it first, then it should appear in this select box."
           >
-            Home Dashboard
+            Приборная панель
           </FormLabel>
           <Select
             value={dashboards.find(dashboard => dashboard.id === homeDashboardId)}
@@ -131,7 +131,7 @@ export class SharedPreferences extends PureComponent<Props, State> {
           />
         </div>
         <div className="gf-form">
-          <label className="gf-form-label width-11">Timezone</label>
+          <label className="gf-form-label width-11">Часовой пояс</label>
           <Select
             isSearchable={false}
             value={timezones.find(item => item.value === timezone)}
@@ -142,7 +142,7 @@ export class SharedPreferences extends PureComponent<Props, State> {
         </div>
         <div className="gf-form-button-row">
           <button type="submit" className="btn btn-primary">
-            Save
+            Сохранить
           </button>
         </div>
       </form>

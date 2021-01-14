@@ -1,18 +1,18 @@
 <div class="dashboard-list">
   <div class="page-action-bar page-action-bar--narrow" ng-hide="ctrl.folderId && !ctrl.hasFilters && ctrl.sections.length === 0">
     <label class="gf-form gf-form--grow gf-form--has-input-icon">
-      <input type="text" class="gf-form-input max-width-30" placeholder="Find Dashboard by name" tabindex="1" give-focus="true" ng-model="ctrl.query.query" ng-model-options="{ debounce: 500 }" spellcheck='false' ng-change="ctrl.onQueryChange()" />
+      <input type="text" class="gf-form-input max-width-30" placeholder="Найти панель по имени" tabindex="1" give-focus="true" ng-model="ctrl.query.query" ng-model-options="{ debounce: 500 }" spellcheck='false' ng-change="ctrl.onQueryChange()" />
       <i class="gf-form-input-icon fa fa-search"></i>
     </label>
     <div class="page-action-bar__spacer"></div>
     <a class="btn btn-primary" ng-href="{{ctrl.createDashboardUrl()}}" ng-if="ctrl.hasEditPermissionInFolders || ctrl.canSave">
-      New Dashboard
+     Новая Приборная Панель
     </a>
     <a class="btn btn-inverse" href="dashboards/folder/new" ng-if="!ctrl.folderId && ctrl.isEditor">
-      New Folder
+      Новая Папка
     </a>
     <a class="btn btn-inverse" href="{{ctrl.importDashboardUrl()}}" ng-if="ctrl.hasEditPermissionInFolders || ctrl.canSave">
-      Import
+      Импорт
     </a>
   </div>
 
@@ -20,7 +20,7 @@
     <div class="gf-form-inline">
       <div class="gf-form" ng-show="ctrl.query.tag.length > 0">
         <label class="gf-form-label width-4">
-          Tags
+          Теги
         </label>
         <div class="gf-form-input gf-form-input--plaintext" ng-show="ctrl.query.tag.length > 0">
           <span ng-repeat="tagName in ctrl.query.tag">
@@ -33,14 +33,14 @@
       <div class="gf-form" ng-show="ctrl.query.starred">
         <label class="gf-form-label">
           <a class="pointer" ng-click="ctrl.removeStarred()">
-            <i class="fa fa-fw fa-check"></i> Starred
+            <i class="fa fa-fw fa-check"></i> Избранные
           </a>
         </label>
       </div>
       <div class="gf-form">
         <label class="gf-form-label">
           <a class="pointer" ng-click="ctrl.clearFilters()" bs-tooltip="'Clear current search query and filters'">
-            <i class="fa fa-remove"></i>&nbsp;Clear
+            <i class="fa fa-remove"></i>&nbsp;Отчистить
           </a>
         </label>
       </div>
@@ -55,7 +55,7 @@
 
 	<div class="search-results" ng-show="!ctrl.folderId && !ctrl.hasFilters && ctrl.sections.length === 0">
     <em class="muted">
-        No dashboards found.
+        Панели мониторинга не найдены.
     </em>
   </div>
 

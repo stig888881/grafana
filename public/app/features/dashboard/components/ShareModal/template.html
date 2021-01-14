@@ -32,8 +32,8 @@
   		<div ng-include src="'shareLinkOptions.html'"></div>
 
        <p class="share-modal-info-text">
-  		 The html code below can be pasted and included in another web page. Unless anonymous access
-  		 is enabled, the user viewing that page need to be signed into grafana for the graph to load.
+Приведенный ниже html-код можно вставить и включить в другую веб-страницу. Если только анонимный доступ
+если этот параметр включен, пользователь, просматривающий эту страницу, должен войти в grafana, чтобы загрузить график.
        </p>
 
        <div class="gf-form-group gf-form--grow">
@@ -53,17 +53,17 @@
 <script type="text/ng-template" id="shareLinkOptions.html">
   <div class="gf-form-group">
   	<gf-form-switch class="gf-form"
-  		label="Current time range" label-class="width-12" switch-class="max-width-6"
+  		label="Текущий временной диапазон" label-class="width-12" switch-class="max-width-6"
   		checked="options.forCurrent" on-change="buildUrl()">
   	</gf-form-switch>
   	<gf-form-switch class="gf-form"
-  		label="Template variables" label-class="width-12" switch-class="max-width-6"
+  		label="Переменные шаблона" label-class="width-12" switch-class="max-width-6"
   		checked="options.includeTemplateVars" on-change="buildUrl()">
   	</gf-form-switch>
   	<div class="gf-form">
-  		<span class="gf-form-label width-12">Theme</span>
+  		<span class="gf-form-label width-12">Тема</span>
   		<div class="gf-form-select-wrapper width-10">
-  			<select class="gf-form-input" ng-model="options.theme" ng-options="f as f for f in ['current', 'dark', 'light']" ng-change="buildUrl()"></select>
+  			<select class="gf-form-input" ng-model="options.theme" ng-options="f as f for f in ['текущая', 'темная', 'светлая']" ng-change="buildUrl()"></select>
   		</div>
   	</div>
   </div>
@@ -76,7 +76,7 @@
   	</div>
   	<div class="share-modal-content">
   		<p class="share-modal-info-text">
-  			Create a direct link to this dashboard or panel, customized with the options below.
+  			Создайте прямую ссылку на эту панель мониторинга или панель, настроенную с помощью следующих параметров.
   		</p>
   		<div ng-include src="'shareLinkOptions.html'"></div>
   		<div>
@@ -86,13 +86,13 @@
   						<input type="text" data-share-panel-url class="gf-form-input" ng-model="shareUrl">
   					</div>
   					<div class="gf-form">
-  						<button class="btn btn-inverse" clipboard-button="getShareUrl()">Copy</button>
+  						<button class="btn btn-inverse" clipboard-button="getShareUrl()">Копировать</button>
   					</div>
   				</div>
   			</div>
   		</div>
   		<div class="gf-form" ng-show="modeSharePanel">
-  			<a href="{{imageUrl}}" target="_blank"><i class="fa fa-camera"></i> Direct link rendered image</a>
+  			<a href="{{imageUrl}}" target="_blank"><i class="fa fa-camera"></i> Прямая ссылка визуализированное изображение</a>
   		</div>
   	</div>
 </script>
@@ -107,30 +107,30 @@
         <div class="share-modal-content">
           <div ng-if="step === 1">
             <p class="share-modal-info-text">
-              A snapshot is an instant way to share an interactive dashboard publicly.
-              When created, we <strong>strip sensitive data</strong> like queries (metric, template and annotation) and panel links,
-              leaving only the visible metric data and series names embedded into your dashboard.
+Моментальный снимок-это мгновенный способ публичного доступа к интерактивной панели мониторинга.
+При создании мы <strong> удаляем конфиденциальные данные</strong>, такие как запросы (метрика, шаблон и аннотация) и ссылки на панели,
+оставляя только видимые данные метрик и имена серий, встроенные в вашу панель мониторинга.
             </p>
             <p class="share-modal-info-text">
-              Keep in mind, your <strong>snapshot can be viewed by anyone</strong> that has the link and can reach the URL.
-              Share wisely.
+Имейте в виду, что ваш снимок <strong>может быть просмотрен любым человеком</strong>, у которого есть ссылка и который может добраться до URL-адреса.
+Делитесь мудро.
             </p>
           </div>
 
   				<div class="share-modal-header" ng-if="step === 3">
   					<p class="share-modal-info-text">
-  						The snapshot has now been deleted. If it you have already accessed it once, It might take up to an hour before it is removed from
-  						browser caches or CDN caches.
+Снимок теперь удален. Если вы уже обращались к нему один раз, это может занять до часа, прежде чем он будет удален из системы.
+кэш браузера или кэш CDN.
   					</p>
   				</div>
 
   				<div class="gf-form-group share-modal-options">
   					<div class="gf-form" ng-if="step === 1">
-  						<span class="gf-form-label width-12">Snapshot name</span>
+  						<span class="gf-form-label width-12">Имя моментального снимка</span>
   						<input type="text" ng-model="snapshot.name" class="gf-form-input max-width-15">
   					</div>
   					<div class="gf-form" ng-if="step === 1">
-  						<span class="gf-form-label width-12">Expire</span>
+  						<span class="gf-form-label width-12">Закончиться</span>
   						<div class="gf-form-select-wrapper max-width-15">
   							<select class="gf-form-input" ng-model="snapshot.expires" ng-options="f.value as f.text for f in expireOptions"></select>
   						</div>
@@ -143,36 +143,36 @@
   								{{snapshotUrl}}
   							</a>
   							<br>
-  							<button class="btn btn-inverse" clipboard-button="getSnapshotUrl()">Copy Link</button>
+  							<button class="btn btn-inverse" clipboard-button="getSnapshotUrl()">Копировать Ссылку</button>
   						</div>
   					</div>
   				</div>
 
   				<div ng-if="step === 1">
   					<p class="share-modal-info-text">
-  						You may need to configure the timeout value if it takes a long time to collect your dashboard's metrics.
+Возможно, Вам потребуется настроить значение тайм-аута, если сбор показателей панели мониторинга занимает много времени.
   					</p>
   				</div>
 
   				<div class="gf-form-group share-modal-options">
   					<div class="gf-form" ng-if="step === 1">
-  						<span class="gf-form-label width-12">Timeout (seconds)</span>
+  						<span class="gf-form-label width-12">Тайм-аут (секунды)</span>
   						<input type="number" ng-model="snapshot.timeoutSeconds" class="gf-form-input max-width-15">
   					</div>
   				</div>
 
   				<div ng-if="step === 1" class="gf-form-button-row">
   					<button class="btn gf-form-btn width-10 btn-primary" ng-click="createSnapshot()" ng-disabled="loading">
-  						Local Snapshot
+  						Локальный Моментальный Снимок
   					</button>
   					<button class="btn gf-form-btn width-16 btn-secondary" ng-if="externalEnabled" ng-click="createSnapshot(true)" ng-disabled="loading">
   						{{sharingButtonText}}
   					</button>
-  					<a class="btn btn-link" ng-click="dismiss()">Cancel</a>
+  					<a class="btn btn-link" ng-click="dismiss()">Выход</a>
   				</div>
 
   				<div class="pull-right" ng-if="step === 2" style="padding: 5px">
-  					Did you make a mistake? <a class="pointer" ng-click="deleteSnapshot()" target="_blank">delete snapshot.</a>
+  					Допустили ошибку? <a class="pointer" ng-click="deleteSnapshot()" target="_blank">Удалить моментальный снимок.</a>
   				</div>
   			</div>
   		</div>

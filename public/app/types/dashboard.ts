@@ -49,11 +49,11 @@ export enum DashboardRouteInfo {
 }
 
 export enum DashboardInitPhase {
-  NotStarted = 'Not started',
-  Fetching = 'Fetching',
-  Services = 'Services',
-  Failed = 'Failed',
-  Completed = 'Completed',
+  NotStarted = 'Не начато',
+  Fetching = 'Извлечение',
+  Services = 'Обработка',
+  Failed = 'Произошла ошибка',
+  Completed = 'Завершено',
 }
 
 export interface DashboardInitError {

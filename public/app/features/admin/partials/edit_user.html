@@ -12,29 +12,29 @@
 				<input type="text" required ng-model="user.name" class="gf-form-input max-width-25" >
 			</div>
 			<div class="gf-form">
-				<span class="gf-form-label width-10">Email</span>
+				<span class="gf-form-label width-10">Электронная почта</span>
 				<input type="email" ng-model="user.email" class="gf-form-input max-width-25" >
 			</div>
 			<div class="gf-form">
-				<span class="gf-form-label width-10">Username</span>
+				<span class="gf-form-label width-10">Имя пользователя</span>
 				<input type="text" ng-model="user.login" class="gf-form-input max-width-25" >
 			</div>
 
 			<div class="gf-form-button-row">
-				<button type="submit" class="btn btn-primary" ng-click="update()" ng-show="!createMode">Update</button>
+				<button type="submit" class="btn btn-primary" ng-click="update()" ng-show="!createMode">Обновить</button>
 			</div>
 	</form>
 
-	<h3 class="page-heading">Change password</h3>
+	<h3 class="page-heading">Сменить пароль</h3>
 
 	<form name="passwordForm" class="gf-form-group">
 		<div class="gf-form">
-				<span class="gf-form-label width-10">New password</span>
+				<span class="gf-form-label width-10">Новый пароль</span>
 				<input type="password" required ng-minlength="4" ng-model="password" class="gf-form-input max-width-25">
 		</div>
 
 		<div class="gf-form-button-row">
-			<button type="submit" class="btn btn-primary" ng-click="setPassword()">Update</button>
+			<button type="submit" class="btn btn-primary" ng-click="setPassword()">Обновить</button>
 		</div>
 	</form>
 

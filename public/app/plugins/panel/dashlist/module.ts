@@ -34,9 +34,9 @@ class DashListCtrl extends PanelCtrl {
     this.events.on('init-edit-mode', this.onInitEditMode.bind(this));
 
     this.groups = [
-      { list: [], show: false, header: 'Starred dashboards' },
-      { list: [], show: false, header: 'Recently viewed dashboards' },
-      { list: [], show: false, header: 'Search' },
+      { list: [], show: false, header: 'Закреплённые приборные панели' },
+      { list: [], show: false, header: 'Недавно просмотренные панели мониторинга' },
+      { list: [], show: false, header: 'Поиск' },
     ];
 
     // update capability

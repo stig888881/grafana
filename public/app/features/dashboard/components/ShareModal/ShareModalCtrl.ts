@@ -16,21 +16,21 @@ export function ShareModalCtrl($scope, $rootScope, $location, $timeout, timeSrv,
     $scope.dashboard = $scope.model && $scope.model.dashboard ? $scope.model.dashboard : $scope.dashboard; // ^
     $scope.modeSharePanel = $scope.panel ? true : false;
 
-    $scope.tabs = [{ title: 'Link', src: 'shareLink.html' }];
+    $scope.tabs = [{ title: 'Ссылка', src: 'shareLink.html' }];
 
     if ($scope.modeSharePanel) {
-      $scope.modalTitle = 'Share Panel';
-      $scope.tabs.push({ title: 'Embed', src: 'shareEmbed.html' });
+      $scope.modalTitle = 'Поделиться панелью';
+      $scope.tabs.push({ title: 'Встроить', src: 'shareEmbed.html' });
     } else {
-      $scope.modalTitle = 'Share';
+      $scope.modalTitle = 'Поделиться';
     }
 
     if (!$scope.dashboard.meta.isSnapshot) {
-      $scope.tabs.push({ title: 'Snapshot', src: 'shareSnapshot.html' });
+      $scope.tabs.push({ title: 'Снимок', src: 'shareSnapshot.html' });
     }
 
     if (!$scope.dashboard.meta.isSnapshot && !$scope.modeSharePanel) {
-      $scope.tabs.push({ title: 'Export', src: 'shareExport.html' });
+      $scope.tabs.push({ title: 'Экспорт', src: 'shareExport.html' });
     }
 
     $scope.buildUrl();

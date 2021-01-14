@@ -81,7 +81,7 @@ class TablePanelCtrl extends MetricsPanelCtrl {
   }
 
   onInitPanelActions(actions: any[]) {
-    actions.push({ text: 'Export CSV', click: 'ctrl.exportCsv()' });
+    actions.push({ text: 'Экспорт CSV', click: 'ctrl.exportCsv()' });
   }
 
   issueQueries(datasource: any) {

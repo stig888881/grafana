@@ -147,7 +147,7 @@ class PluginPage extends PureComponent<Props, State> {
       // Check for the dashboard tabs
       if (find(meta.includes, { type: 'dashboard' })) {
         tabs.push({
-          text: 'Dashboards',
+          text: 'Панель управления',
           icon: 'gicon gicon-dashboard',
           url: `${appSubUrl}${path}?tab=${TAB_ID_DASHBOARDS}`,
           id: TAB_ID_DASHBOARDS,
