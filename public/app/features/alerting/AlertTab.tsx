@@ -89,13 +89,13 @@ export class AlertTab extends PureComponent<Props> {
   deleteAlert = (): EditorToolbarView => {
     const { panel } = this.props;
     return {
-      title: 'Удалить',
+      title: 'Delete',
       btnType: 'danger',
       onClick: () => {
         appEvents.emit('confirm-modal', {
-          title: 'Удалить оповещение',
-          text: 'Вы уверены, что хотите удалить это правило оповещения?',
-          text2: 'Вам нужно сохранить панель мониторинга, чтобы удаление вступило в силу',
+          title: 'Delete Alert',
+          text: 'Are you sure you want to delete this alert rule?',
+          text2: 'You need to save dashboard for the delete to take effect',
           icon: 'fa-trash',
           yesText: 'Delete',
           onConfirm: () => {
@@ -116,7 +116,7 @@ export class AlertTab extends PureComponent<Props> {
   };
 
   testRule = (): EditorToolbarView => ({
-    title: 'Проверить правило',
+    title: 'Test Rule',
     render: () => this.renderTestRuleResult(),
   });
 
@@ -132,14 +132,14 @@ export class AlertTab extends PureComponent<Props> {
     const toolbarItems = alert ? [this.stateHistory(), this.testRule(), this.deleteAlert()] : [];
 
     const model = {
-      title: 'Панель не имеет определенного правила оповещения',
+      title: 'Panel has no alert rule defined',
       buttonIcon: 'gicon gicon-alert',
       onClick: this.onAddAlert,
-      buttonTitle: 'Создать Оповещение',
+      buttonTitle: 'Create Alert',
     };
 
     return (
-      <EditorTabBody heading="Оповещение" toolbarItems={toolbarItems}>
+      <EditorTabBody heading="Alert" toolbarItems={toolbarItems}>
         <>
           <div ref={element => (this.element = element)} />
           {!alert && <EmptyListCTA model={model} />}
