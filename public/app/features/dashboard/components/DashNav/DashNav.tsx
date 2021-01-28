@@ -177,7 +177,7 @@ export class DashNav extends PureComponent<Props> {
   renderBackButton() {
     return (
       <div className="navbar-edit">
-        <Tooltip content="Go back (Esc)">
+        <Tooltip content="Назад (Esc)">
           <button className="navbar-edit__back-btn" onClick={this.onClose}>
             <i className="fa fa-arrow-left" />
           </button>
