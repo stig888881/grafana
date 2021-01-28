@@ -102,7 +102,7 @@ func (hs *HTTPServer) LoginPost(c *m.ReqContext, cmd dtos.LoginCommand) Response
 
 	if err := bus.Dispatch(authQuery); err != nil {
 		if err == login.ErrInvalidCredentials || err == login.ErrTooManyLoginAttempts {
-			return Error(401, "Invalid username or password", err)
+			return Error(401, "Неверное имя пользователя или пароль", err)
 		}
 
 		return Error(500, "Error while trying to authenticate user", err)
